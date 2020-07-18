@@ -5,9 +5,10 @@
 .navigation-wrapper {
     position: sticky;
     top: 0;
-    padding: 25px;
+    padding: 15px;
     box-shadow: $shadow-2;
     background: $white;
+    z-index: 9999;
 
     .navigation {
         display: flex;
@@ -41,7 +42,7 @@
     .navigation-list-item {
         display: none;
         align-items: center;
-        margin: 0 25px;
+        margin: 0 20px;
 
         @include for-desktop-up {
             display: flex;
@@ -72,8 +73,9 @@
         margin-left: 20px;
     }
 
-    .btn--login {
+    .btn-login {
         width: 80px;
         height: 35px;
+        padding: 10px 22px;
     }
 }

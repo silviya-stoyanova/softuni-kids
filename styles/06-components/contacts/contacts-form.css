@@ -71,6 +71,10 @@
   padding: 15px;
 }
 
+.contact-us-form-container .contact-us-input-field {
+  padding: 10px 10px 15px;
+}
+
 .contact-us-form-container .contact-us-textarea {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
