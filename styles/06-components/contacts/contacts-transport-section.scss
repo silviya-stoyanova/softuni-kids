@@ -1,0 +1,46 @@
+@import "../../01-settings/settings-colors.scss";
+@import "../../01-settings/settings-box-shadows.scss";
+
+.transport-to-softuni-container {
+  background-color: $orange-50;
+  min-height: 570px;
+  padding: 50px 0;
+
+  .transport-to-softuni {
+    display: grid;
+    grid-template-rows: 35px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(3, 395px);
+    gap: 50px 35px;
+  }
+
+  .transport-to-softuni-title,
+  .transport-to-softuni-type-title {
+    color: $green-300;
+  }
+
+  .transport-to-softuni-title {
+    grid-column: 1/-1;
+    justify-self: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .transport-to-softuni-type {
+  }
+
+  .transport-to-softuni-type-title {
+    margin: 0 0 20px 0;
+  }
+
+  .transport-to-softuni-type-list {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .transport-to-softuni-type-list-item {
+    padding-bottom: 15px;
+  }
+}

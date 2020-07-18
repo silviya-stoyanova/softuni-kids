@@ -1,0 +1,74 @@
+@import "../../01-settings/settings-colors.scss";
+@import "../../01-settings/settings-box-shadows.scss";
+@import "../../02-tools/mixins.scss";
+
+.contacts-header {
+  min-height: 500px;
+  position: relative;
+
+  .header-map-container {
+    height: 500px;
+    background: no-repeat url("../../../assets/images/map.png");
+    background-position-y: -75px;
+  }
+
+  .header-text-and-button-container {
+    display: grid;
+    grid-template-columns: repeat(2, 215px);
+    grid-template-rows: 150px 80px 45px;
+    gap: 25px;
+    width: 520px;
+    height: 380px;
+    padding: 30px;
+    position: absolute;
+    bottom: -5px;
+    left: 75px;
+    color: $grey-700;
+    background-color: $white;
+    box-shadow: $shadow-1;
+    border-radius: 12px;
+  }
+
+  .header-text {
+    padding-right: 15px;
+  }
+
+  .header-text-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: $green-300;
+    margin: 0 0 20px 0;
+  }
+
+  .header-text-description {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0 10px 0 0;
+  }
+
+  .header-working-time-container {
+    display: grid;
+    grid-template-columns: 90px 105px;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px 25px;
+  }
+
+  .header-working-hours,
+  .header-working-days {
+    margin: 0;
+  }
+  
+  .header-working-hours {
+    color: $orange-800;
+  }
+
+  .find-us-btn {
+    grid-row: 3;
+    grid-column: 1/span 2;
+    justify-self: center;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

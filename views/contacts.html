@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="../styles/06-components/common/components-header.css">
   <link rel="stylesheet" href="../styles/06-components/common/components-footer.css">
   <link rel="stylesheet" href="../styles/06-components/common/components-navigation.css">
+  <link rel="stylesheet" href="../styles/06-components/contacts/contacts-header.css">
+  <link rel="stylesheet" href="../styles/06-components/contacts/contacts-form.css">
+  <link rel="stylesheet" href="../styles/06-components/contacts/contacts-transport-section.css">
   <link rel="stylesheet" href="../styles/07-utilities/utilities-centered.css">
   <title>Contact us - SoftUni Kids</title>
 </head>
@@ -25,7 +28,6 @@
       <article class="navigation-logo">
         <img src="../assets/images/logo.png" alt="Logo">
       </article>
-
       <ul class="navigation-list">
         <li class="navigation-list-item">
           <a href="#">обучения</a>
@@ -46,60 +48,108 @@
           <img src="../assets/icons/search.png" alt="Search">
         </li>
         <li class="navigation-list-item login-btn-wrapper">
-          <button class="btn btn-secondary btn-login">
+          <button class="btn btn-primary btn-login">
             вход
           </button>
         </li>
       </ul>
     </div>
-
   </nav>
 
-  <header class="header header-info">
-    <div class="header-map-container">
-      <img src="../assets/images/map.png" alt="map">
-    </div>
+  <header class="header contacts-header">
+    <div class="header-map-container"></div>
+    <section class="header-text-container header-text-and-button-container">
+      <div class="header-text">
+        <h3 class="header-text-title">Адрес:</h3>
+        <p class="header-text-description">
+          София, кв. Изгрев, ул. "Тинтява" 15-17, етаж 1,
+          ПК: 1113
+        </p>
+      </div>
 
-    <section class="header-text-and-button-container">
-      <article class="header-text-container">
-        <div class="header-text">
-          <h3 class="header-text-title">Адрес:</h3>
-          <p class="header-text-description">
-            София, кв. Изгрев, ул. "Тинтява" 15-17, етаж 1,
-            ПК: 1113
-          </p>
+      <div class="header-text">
+        <h3 class="header-text-title">Работно време:</h3>
+        <div class="header-working-time-container">
+          <p class="header-working-hours">9:00 - 19:30</p>
+          <p class="header-working-days">Понеделник - Петък</p>
+          <p class="header-working-hours">8:30 - 18:00</p>
+          <p class="header-working-days">Събота и Неделя</p>
         </div>
+      </div>
 
-        <div class="header-text">
-          <h3 class="header-text-title">Работно време:</h3>
-          <div class="header-working-time-container">
-            <p class="header-working-hours">9:00 - 19:30</p>
-            <p class="header-working-days">Понеделник - Петък</p>
-            <p class="header-working-hours">8:30 - 18:00</p>
-            <p class="header-working-days">Събота и Неделя</p>
-          </div>
-        </div>
+      <div class="header-text">
+        <h3 class="header-text-title">Контакти:</h3>
+        <p class="header-text-description">+ 359 892 241 199</p>
+        <p class="header-text-description">digital@softuni.bg</p>
+      </div>
 
-        <div class="header-text">
-          <h3 class="header-text-title">Контакти:</h3>
-          <p class="header-text-description">+ 359 892 241 199</p>
-          <p class="header-text-description">digital@softuni.bg</p>
-        </div>
-      </article>
-      <button class="btn primary-btn find-us"></button>
+      <button class="btn btn-secondary find-us-btn">намери ни на картата</button>
     </section>
   </header>
 
   <main>
-    <section class="contact-us-form-container">
+    <section class="contact-us-form-container container">
+      <h3 class="contact-us-form-title">Пишете ни</h3>
       <form action="#" class="contact-us-form">
-        <input type="text" placeholder="Заглавие">
-        <input type="text" placeholder="Имейл адрес">
-        <input type="text" placeholder="Съобщение">
-        <button class="btn btn-secondary" type="submit">
+        <input class="contact-us-input-field" type="text" placeholder="Заглавие">
+        <input class="contact-us-input-field" type="text" placeholder="Имейл адрес">
+        <textarea class="contact-us-textarea" type="text" placeholder="Съобщение"></textarea>
+        <button class="btn btn-primary contact-us-btn" type="submit">
           изпрати
         </button>
       </form>
+    </section>
+
+    <section class="transport-to-softuni-container">
+      <article class="transport-to-softuni container">
+        <h2 class="transport-to-softuni-title">Как да стигна до SoftUni?</h2>
+
+        <article class="transport-to-softuni-type">
+          <h3 class="transport-to-softuni-type-title">Метро</h3>
+          <ul class="transport-to-softuni-type-list">
+            <li class="transport-to-softuni-type-list-item">
+              Метростанция <strong>Жолио Кюри</strong> - на 5-10 минути от
+              СофтУни</li>
+            <li class="transport-to-softuni-type-list-item">
+              Метростанция <strong>Г. М. Димитров</strong> - на 5-10
+              минути
+              от СофтУни</li>
+          </ul>
+        </article>
+
+        <article class="transport-to-softuni-type">
+          <h3 class="transport-to-softuni-type-title">Автобуси</h3>
+          <ul class="transport-to-softuni-type-list">
+            <li class="transport-to-softuni-type-list-item">
+              <strong>67, 413</strong> - Спирка “СТЦ Интерпред” (1112) или спирка “ж.к. Дианабад” (0627) (на бул. Драган
+              Цанков)
+            </li>
+            <li class="transport-to-softuni-type-list-item">
+              <strong>88, 94, 102</strong> - Спирка “ПК Диана” (1342) (на 10-ина минути от СофтУни)
+            </li>
+            <li class="transport-to-softuni-type-list-item">
+              <strong>88, 280, 294</strong> - Спирка “СБАЛ по онкология” (0764) (на кръстовището на бул. Г. М. Димитров
+              и бул. Драган Цанков)
+            </li>
+            <li class="transport-to-softuni-type-list-item">
+              <strong>123, 69, 70, 88, 67, 413</strong> - Спирка “СБАЛ по онкология” (2542) (на кръстовището на бул. Г.
+              М. Димитров и бул. Драган Цанков)
+            </li>
+          </ul>
+        </article>
+
+        <article class="transport-to-softuni-type">
+          <h3 class="transport-to-softuni-type-title">Маршрутки</h3>
+          <ul class="transport-to-softuni-type-list">
+            <li class="transport-to-softuni-type-list-item">
+              <strong>5</strong> - минава през метростанцията на бул Г. М. Димитров
+            </li>
+            <li class="transport-to-softuni-type-list-item">
+              <strong>27</strong> - минава през метростанцията на бул Г. М. Димитров
+            </li>
+          </ul>
+        </article>
+      </article>
     </section>
   </main>
 

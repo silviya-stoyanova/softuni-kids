@@ -1,0 +1,48 @@
+@import "../../01-settings/settings-colors.scss";
+@import "../../01-settings/settings-box-shadows.scss";
+
+.contact-us-form-container {
+  max-width: 850px;
+  margin: 105px auto 100px;
+
+  .contact-us-form-title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: $green-300;
+    margin-top: 0;
+  }
+
+  .contact-us-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50px 190px 50px;
+    gap: 30px;
+  }
+
+  .contact-us-input-field,
+  .contact-us-textarea {
+    border: 1px solid $grey-500;
+    border-radius: 6px;
+
+    &::placeholder {
+      font-size: 16px;
+      line-height: 19px;
+      color: $grey-500;
+      padding: 15px;
+    }
+  }
+
+  .contact-us-input-field {
+
+  }
+
+  .contact-us-textarea {
+    grid-column: 1 / span 2;
+  }
+
+  .contact-us-btn {
+    justify-self: start;
+  }
+}

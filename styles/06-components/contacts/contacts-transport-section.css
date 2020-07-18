@@ -1,0 +1,55 @@
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.transport-to-softuni-container {
+  background-color: #FFF8E1;
+  min-height: 570px;
+  padding: 50px 0;
+}
+
+.transport-to-softuni-container .transport-to-softuni {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 35px 1fr;
+      grid-template-rows: 35px 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 50px 35px;
+}
+
+.transport-to-softuni-container .transport-to-softuni-title,
+.transport-to-softuni-container .transport-to-softuni-type-title {
+  color: #41BEAD;
+}
+
+.transport-to-softuni-container .transport-to-softuni-title {
+  grid-column: 1/-1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.transport-to-softuni-container .transport-to-softuni-type-title {
+  margin: 0 0 20px 0;
+}
+
+.transport-to-softuni-container .transport-to-softuni-type-list {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.transport-to-softuni-container .transport-to-softuni-type-list-item {
+  padding-bottom: 15px;
+}
+/*# sourceMappingURL=contacts-transport-section.css.map */

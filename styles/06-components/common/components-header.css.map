@@ -1,9 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,KAAK;EACjB,UAAU,EAAE,MAAM;EAClB,KAAK,ECPD,IAAI;EDQR,UAAU,ECgBD,OAAO;CDNnB",
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,KAAK,ECHD,IAAI;CDaX",
     "sources": [
         "components-header.scss",
-        "../01-settings/settings-colors.scss"
+        "../../01-settings/settings-colors.scss"
     ],
     "names": [],
     "file": "components-header.css"
