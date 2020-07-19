@@ -7,26 +7,39 @@
   position: relative;
 
   .header-map-container {
-    height: 500px;
-    background: no-repeat url("../../../assets/images/map.png");
-    background-position-y: -75px;
+    height: 425px;
+    background: bottom/cover no-repeat url("../../../assets/images/map.png");
+    //background-position-y: -125px;
+    //background-size: cover;
   }
 
   .header-text-and-button-container {
     display: grid;
-    grid-template-columns: repeat(2, 215px);
-    grid-template-rows: 150px 80px 45px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 150px) 80px 45px;
     gap: 25px;
-    width: 520px;
-    height: 380px;
+    max-width: 520px;
+    min-height: 380px;
     padding: 30px;
-    position: absolute;
-    bottom: -5px;
-    left: 75px;
+    margin: 0 20px;
+    position: relative;
+    bottom: 85px;
     color: $grey-700;
     background-color: $white;
     box-shadow: $shadow-1;
     border-radius: 12px;
+
+    @include for-phone-up {
+      grid-template-columns: repeat(2, 215px);
+      grid-template-rows: 150px 80px 45px;
+      margin: 0 auto;
+    }
+
+    @include for-tablet-up {
+      position: absolute;
+      bottom: -5px;
+      left: 75px;
+    }
   }
 
   .header-text {
@@ -58,17 +71,22 @@
   .header-working-days {
     margin: 0;
   }
-  
+
   .header-working-hours {
     color: $orange-800;
   }
 
   .find-us-btn {
-    grid-row: 3;
-    grid-column: 1/span 2;
+    grid-row: 4;
     justify-self: center;
     font-weight: 800;
     font-size: 14px;
     line-height: 16px;
+    box-shadow: $shadow-0;
+
+    @include for-phone-up {
+      grid-row: 3;
+      grid-column: 1 / span 2;
+    }
   }
 }

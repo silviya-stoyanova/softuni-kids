@@ -15,30 +15,47 @@
 }
 
 .contacts-header .header-map-container {
-  height: 500px;
-  background: no-repeat url("../../../assets/images/map.png");
-  background-position-y: -75px;
+  height: 425px;
+  background: bottom/cover no-repeat url("../../../assets/images/map.png");
 }
 
 .contacts-header .header-text-and-button-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (215px)[2];
-      grid-template-columns: repeat(2, 215px);
-  -ms-grid-rows: 150px 80px 45px;
-      grid-template-rows: 150px 80px 45px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (150px)[2] 80px 45px;
+      grid-template-rows: repeat(2, 150px) 80px 45px;
   gap: 25px;
-  width: 520px;
-  height: 380px;
+  max-width: 520px;
+  min-height: 380px;
   padding: 30px;
-  position: absolute;
-  bottom: -5px;
-  left: 75px;
+  margin: 0 20px;
+  position: relative;
+  bottom: 85px;
   color: #565656;
   background-color: #FFF;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   border-radius: 12px;
+}
+
+@media only screen and (min-width: 576px) {
+  .contacts-header .header-text-and-button-container {
+    -ms-grid-columns: (215px)[2];
+        grid-template-columns: repeat(2, 215px);
+    -ms-grid-rows: 150px 80px 45px;
+        grid-template-rows: 150px 80px 45px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-header .header-text-and-button-container {
+    position: absolute;
+    bottom: -5px;
+    left: 75px;
+  }
 }
 
 .contacts-header .header-text {
@@ -79,15 +96,24 @@
 }
 
 .contacts-header .find-us-btn {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/span 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
   -ms-grid-column-align: center;
       justify-self: center;
   font-weight: 800;
   font-size: 14px;
   line-height: 16px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media only screen and (min-width: 576px) {
+  .contacts-header .find-us-btn {
+    -ms-grid-row: 3;
+    grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
 }
 /*# sourceMappingURL=contacts-header.css.map */

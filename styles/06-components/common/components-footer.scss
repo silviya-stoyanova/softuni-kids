@@ -3,29 +3,34 @@
 @import "../../02-tools/mixins.scss";
 
 .footer {
+  position: relative;
   min-height: 325px;
   background-color: $grey-700;
   border-top: 12px solid $grey-500;
 
   .footer-image-and-list-container {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 0 20px;
+
+    @include for-desktop-up {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 80px;
+      padding: 0 50px;
+    }
   }
 
   .footer-image-container {
+    display: none;
     width: 220px;
-    height: 310px;
     position: absolute;
     bottom: 0;
-    opacity: 0.1;
 
     @include for-desktop-up {
+      display: block;
       position: relative;
-      opacity: 1;
-      height: auto;
     }
   }
 
@@ -40,44 +45,69 @@
   }
 
   .footer-list {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 45px 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 45px;
+    padding: 50px 0;
+
+    @include for-tablet-up {
+      grid-template-columns: 255px 145px 140px 180px;
+      grid-template-rows: 1fr;
+      // grid-template-columns: repeat(4, minmax(min-content, 255px));
+      gap: 80px;
+      padding: 45px 0;
+    }
   }
 
   .footer-list-item {
-    flex: 1 0 10%;
-    padding: 0 30px;
-
     a {
       font-weight: normal;
     }
 
-    &:last-child {
-      padding-right: 0;
+    &.kids {
+      order: 1;
     }
 
-    &.kids {
-      flex: 1;
+    &.all-educations {
+      order: 3;
+    }
 
-      .footer-inner-list-container {
-        display: flex;
-        flex-wrap: wrap;
-      }
+    &.all-initiatives {
+      order: 2;
+    }
 
-      .footer-inner-list-item {
-        padding-right: 25px;
+    &.find-us {
+      order: 4;
+    }
+
+    &.find-us {
+      .footer-list-item-title {
+        display: none;
       }
     }
 
     @include for-desktop-up {
-      &:first-child {
-        padding-left: 50px;
+      &.kids {
+        .footer-inner-list-container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 25px;
+        }
       }
 
-      &.kids {
-        flex: 1 0 25%;
+      &.all-educations {
+        order: 2;
+      }
+
+      &.all-initiatives {
+        order: 3;
+      }
+
+      &.find-us {
+        .footer-list-item-title {
+          display: block;
+        }
       }
     }
   }
@@ -120,9 +150,26 @@
   }
 
   .all-rights-reserved {
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-top: 30px;
+    margin: 30px auto;
+    border-top: 1px solid $grey-600;
+
     line-height: 19px;
-    padding-top: 50px;
     color: $grey-500;
 
+    @include for-desktop-up {
+      position: relative;
+      width: 100%;
+      padding-top: 50px;
+      margin: 0;
+      border: none;
+      text-align: left;
+    }
   }
 }

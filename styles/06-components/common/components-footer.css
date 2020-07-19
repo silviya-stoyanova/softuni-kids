@@ -10,6 +10,7 @@
 /* Shadow 16dp */
 /* Shadow 24dp */
 .footer {
+  position: relative;
   min-height: 325px;
   background-color: #565656;
   border-top: 12px solid #919191;
@@ -17,30 +18,35 @@
 
 .footer .footer-image-and-list-container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer .footer-image-and-list-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 220px 1fr;
+        grid-template-columns: 220px 1fr;
+    gap: 80px;
+    padding: 0 50px;
+  }
 }
 
 .footer .footer-image-container {
+  display: none;
   width: 220px;
-  height: 310px;
   position: absolute;
   bottom: 0;
-  opacity: 0.1;
 }
 
 @media only screen and (min-width: 992px) {
   .footer .footer-image-container {
+    display: block;
     position: relative;
-    opacity: 1;
-    height: auto;
   }
 }
 
@@ -57,58 +63,79 @@
 }
 
 .footer .footer-list {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 45px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px 45px;
+  padding: 50px 0;
 }
 
-.footer .footer-list-item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 10%;
-          flex: 1 0 10%;
-  padding: 0 30px;
+@media only screen and (min-width: 768px) {
+  .footer .footer-list {
+    -ms-grid-columns: 255px 145px 140px 180px;
+        grid-template-columns: 255px 145px 140px 180px;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 80px;
+    padding: 45px 0;
+  }
 }
 
 .footer .footer-list-item a {
   font-weight: normal;
 }
 
-.footer .footer-list-item:last-child {
-  padding-right: 0;
-}
-
 .footer .footer-list-item.kids {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
-.footer .footer-list-item.kids .footer-inner-list-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.footer .footer-list-item.all-educations {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
-.footer .footer-list-item.kids .footer-inner-list-item {
-  padding-right: 25px;
+.footer .footer-list-item.all-initiatives {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.footer .footer-list-item.find-us {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.footer .footer-list-item.find-us .footer-list-item-title {
+  display: none;
 }
 
 @media only screen and (min-width: 992px) {
-  .footer .footer-list-item:first-child {
-    padding-left: 50px;
+  .footer .footer-list-item.kids .footer-inner-list-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
   }
-  .footer .footer-list-item.kids {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 25%;
-            flex: 1 0 25%;
+  .footer .footer-list-item.all-educations {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer .footer-list-item.all-initiatives {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .footer .footer-list-item.find-us .footer-list-item-title {
+    display: block;
   }
 }
 
@@ -150,8 +177,27 @@
 }
 
 .footer .all-rights-reserved {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding-top: 30px;
+  margin: 30px auto;
+  border-top: 1px solid #696969;
   line-height: 19px;
-  padding-top: 50px;
   color: #919191;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer .all-rights-reserved {
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    margin: 0;
+    border: none;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=components-footer.css.map */

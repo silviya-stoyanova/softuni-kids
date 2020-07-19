@@ -1,5 +1,6 @@
 @import "../../01-settings/settings-colors.scss";
 @import "../../01-settings/settings-box-shadows.scss";
+@import "../../02-tools/mixins.scss";
 
 .transport-to-softuni-container {
   background-color: $orange-50;
@@ -8,10 +9,16 @@
 
   .transport-to-softuni {
     display: grid;
-    grid-template-rows: 35px 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    // grid-template-columns: repeat(3, 395px);
+    //grid-template-rows: 35px 1fr;
+    //grid-template-columns: repeat(3, 1fr);
+    //// grid-template-columns: repeat(3, 395px);
     gap: 50px 35px;
+
+    @include for-tablet-up {
+      grid-template-rows: 35px 1fr;
+      grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 395px);
+    }
   }
 
   .transport-to-softuni-title,
@@ -20,12 +27,15 @@
   }
 
   .transport-to-softuni-title {
-    grid-column: 1/-1;
     justify-self: center;
     font-weight: 600;
     font-size: 24px;
     line-height: 30px;
     margin: 0;
+
+    @include for-tablet-up {
+      grid-column: 1/-1;
+    }
   }
 
   .transport-to-softuni-type {
