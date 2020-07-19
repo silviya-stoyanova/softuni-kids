@@ -1,8 +1,13 @@
 @import "../02-tools/mixins.scss";
 
 .container {
-    max-width: 1250px;
+    max-width: 1290px;
     width: 100%;
-    margin: 50px auto;
-    padding: 0 50px;
+    margin: 20px auto;
+    padding: 0 20px;
+
+    @include for-tablet-up {
+        margin: 50px auto;
+        padding: 0 50px;
+    }
 }

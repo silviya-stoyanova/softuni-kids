@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="../styles/06-components/common/components-header.css">
   <link rel="stylesheet" href="../styles/06-components/common/components-footer.css">
   <link rel="stylesheet" href="../styles/06-components/common/components-navigation.css">
+  <link rel="stylesheet" href="../styles/06-components/courses/courses-header.css">
+  <link rel="stylesheet" href="../styles/06-components/courses/courses-details.css">
   <link rel="stylesheet" href="../styles/07-utilities/utilities-centered.css">
   <title>Courses - SoftUni Kids</title>
 </head>
@@ -46,7 +48,7 @@
           <img src="../assets/icons/search.png" alt="Search">
         </li>
         <li class="navigation-list-item login-btn-wrapper">
-          <button class="btn btn-secondary btn-login">
+          <button class="btn btn-primary btn-login">
             вход
           </button>
         </li>
@@ -55,14 +57,14 @@
 
   </nav>
 
-  <header class="header">
+  <header class="header course-header">
     <div class="course-level">Начинаещ</div>
     <h1 class="header-title">Първи стъпки в програмирането - част 2</h1>
-  </header>
 
-  <main>
-    <section class="course-intro-container">
-      <button class="btn btn-secondary">записване</button>
+    <section class="course-intro-container container">
+      <article class="course-intro-button-container">
+        <button class="btn btn-primary">записване</button>
+      </article>
 
       <ul class="course-intro-list">
         <li class="course-intro-list-item">
@@ -96,8 +98,10 @@
 
       </ul>
     </section>
+  </header>
 
-    <section class="course-details">
+  <main>
+    <section class="course-details-container container">
       <article class="course-details-text-container">
         <p class="course-details-text">
           Това е втора част към онлайн обучението „Първи стъпки в програмирането”, който е първият и основополагащ

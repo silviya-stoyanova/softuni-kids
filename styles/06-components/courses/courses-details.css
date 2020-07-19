@@ -1,0 +1,49 @@
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.course-details-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 250px;
+      grid-template-rows: 1fr 250px;
+  gap: 30px;
+  margin: 150px auto 65px;
+}
+
+@media only screen and (min-width: 992px) {
+  .course-details-container {
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-columns: 1fr 440px;
+        grid-template-columns: 1fr 440px;
+    gap: 110px;
+    padding: 0;
+    margin: 150px auto 100px;
+  }
+}
+
+.course-details-container .course-details-text-container {
+  color: #565656;
+}
+
+.course-details-container .course-details-video-container {
+  max-width: 440px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.course-details-container .course-details-video-cover-image {
+  max-width: 100%;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=courses-details.css.map */
