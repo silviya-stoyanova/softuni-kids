@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,IAAI;EACrB,SAAS,EAAE,OAAO;EAClB,KAAK,ECkBM,OAAO;EDjBlB,aAAa,EAAE,GAAG,CAAC,KAAK,CCiBb,OAAO;CDhBnB",
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,IAAI;EACrB,SAAS,EAAE,OAAO;EAClB,KAAK,ECkBM,OAAO;CDjBnB",
     "sources": [
         "elements-links.scss",
         "../01-settings/settings-colors.scss"

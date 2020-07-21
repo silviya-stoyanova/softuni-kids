@@ -11,6 +11,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  a {
+    border-bottom: 1px solid $orange-800;
+  }
+
   .lectures {
     border-bottom: 10px dotted $orange-100;
     padding-bottom: 30px;

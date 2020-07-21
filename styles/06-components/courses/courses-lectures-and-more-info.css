@@ -23,6 +23,10 @@
   }
 }
 
+.lectures-and-more-info-container a {
+  border-bottom: 1px solid #FF9100;
+}
+
 .lectures-and-more-info-container .lectures {
   border-bottom: 10px dotted #FFECB3;
   padding-bottom: 30px;
