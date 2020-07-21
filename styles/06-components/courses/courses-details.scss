@@ -12,7 +12,7 @@
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 440px;
     gap: 110px;
-    padding: 0;
+    //padding: 0;
     margin: 150px auto 100px;
   }
 
@@ -24,6 +24,7 @@
   }
 
   .course-details-video-container {
+    justify-self: center;
     max-width: 440px;
     height: 250px;
     border-radius: 12px;

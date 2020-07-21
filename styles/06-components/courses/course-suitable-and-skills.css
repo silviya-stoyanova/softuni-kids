@@ -1,0 +1,101 @@
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.course-suitable-and-skills-container {
+  margin-bottom: 65px;
+}
+
+@media only screen and (min-width: 768px) {
+  .course-suitable-and-skills-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.course-suitable-and-skills-container .course-suitable,
+.course-suitable-and-skills-container .course-skills {
+  color: #565656;
+}
+
+.course-suitable-and-skills-container .course-suitable {
+  border-bottom: 10px dotted #FFECB3;
+  padding-bottom: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .course-suitable-and-skills-container .course-suitable {
+    padding-bottom: 0;
+    padding-right: 30px;
+    border-bottom: none;
+    border-right: 10px dotted #FFECB3;
+  }
+}
+
+.course-suitable-and-skills-container .course-suitable-title,
+.course-suitable-and-skills-container .course-skills-title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 600;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .course-suitable-and-skills-container .course-suitable-title,
+  .course-suitable-and-skills-container .course-skills-title {
+    display: inline-block;
+  }
+  .course-suitable-and-skills-container .course-suitable-title:before,
+  .course-suitable-and-skills-container .course-skills-title:before {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.course-suitable-and-skills-container .course-suitable-title:before,
+.course-suitable-and-skills-container .course-skills-title:before {
+  content: "";
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  display: inline-block;
+  margin-right: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.course-suitable-and-skills-container .course-suitable-title:before {
+  background-image: url("../../../assets/icons/people.svg");
+}
+
+.course-suitable-and-skills-container .course-suitable-description,
+.course-suitable-and-skills-container .course-skills-description {
+  margin-bottom: 0;
+}
+
+.course-suitable-and-skills-container .course-skills {
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .course-suitable-and-skills-container .course-skills {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+.course-suitable-and-skills-container .course-skills-title:before {
+  background-image: url("../../../assets/icons/bell.svg");
+}
+/*# sourceMappingURL=course-suitable-and-skills.css.map */
