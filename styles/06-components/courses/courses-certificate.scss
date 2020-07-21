@@ -4,6 +4,7 @@
 
 .certificate-container {
   display: none;
+  margin-bottom: 105px;
 
   @include for-desktop-up {
     display: grid;

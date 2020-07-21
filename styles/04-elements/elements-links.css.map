@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAC;EACA,eAAe,EAAE,IAAI;CACtB",
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,IAAI;EACrB,SAAS,EAAE,OAAO;EAClB,KAAK,ECkBM,OAAO;EDjBlB,aAAa,EAAE,GAAG,CAAC,KAAK,CCiBb,OAAO;CDhBnB",
     "sources": [
-        "elements-links.scss"
+        "elements-links.scss",
+        "../01-settings/settings-colors.scss"
     ],
     "names": [],
     "file": "elements-links.css"

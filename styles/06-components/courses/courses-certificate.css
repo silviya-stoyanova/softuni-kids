@@ -11,6 +11,7 @@
 /* Shadow 24dp */
 .certificate-container {
   display: none;
+  margin-bottom: 105px;
 }
 
 @media only screen and (min-width: 992px) {

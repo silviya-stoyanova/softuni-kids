@@ -11,6 +11,7 @@
 /* Shadow 24dp */
 .course-suitable-and-skills-container {
   margin-bottom: 65px;
+  color: #565656;
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,11 +21,6 @@
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.course-suitable-and-skills-container .course-suitable,
-.course-suitable-and-skills-container .course-skills {
-  color: #565656;
 }
 
 .course-suitable-and-skills-container .course-suitable {
