@@ -50,6 +50,7 @@
 .navigation-wrapper .navigation-logo {
   position: relative;
   margin-left: 40px;
+  cursor: pointer;
 }
 
 .navigation-wrapper .navigation-logo .fa-caret-right {
@@ -100,7 +101,6 @@
 }
 
 .navigation-wrapper .navigation-list-item a:hover {
-  cursor: pointer;
   color: #FF9100;
 }
 

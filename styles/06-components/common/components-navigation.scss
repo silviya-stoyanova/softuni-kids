@@ -30,6 +30,7 @@
     .navigation-logo {
         position: relative;
         margin-left: 40px;
+        cursor: pointer;
 
         .fa-caret-right {
             position: absolute;
@@ -67,7 +68,6 @@
             transition: 0.3s ease color;
             
             &:hover {
-                cursor: pointer;
                 color: $orange-800;
             }
         }
