@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="../styles/06-components/courses/courses-header.css">
   <link rel="stylesheet" href="../styles/06-components/courses/courses-details.css">
   <link rel="stylesheet" href="../styles/06-components/courses/course-suitable-and-skills.css">
+  <link rel="stylesheet" href="../styles/06-components/courses/courses-educational-program.css">
   <link rel="stylesheet" href="../styles/07-utilities/utilities-centered.css">
   <title>Courses - SoftUni Kids</title>
 </head>
@@ -154,34 +155,51 @@
     </section>
 
     <section class="educational-program-container">
-      <article class="educational-program-text-container">
-        <h3 class="educational-program-text-title">
-          Програма на обучението
-        </h3>
-        <p class="educational-program-text-description">
-          През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще имат възможност да ни
-          задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще се забавляваме докато учим
-          как да прогамираме.
-        </p>
-        <p class="educational-program-text-lectures">
-          занятия
-        </p>
-        <select class="educational-program-lecture">
-          <option>1. Цикли и безкрайни цикли</option>
-        </select>
-        <select class="educational-program-lecture">
-          <option>2. Събития</option>
-        </select>
-        <select class="educational-program-lecture">
-          <option>3. Презентационни умения. Създаване на цялостен сценарий в Scratch.</option>
-        </select>
-        <select class="educational-program-lecture">
-          <option>4. Работа по финален проект и презентирането му.</option>
-        </select>
-      </article>
+      <article class="educational-program-text-and-image-container container">
+        <section class="educational-program-text-container">
+          <h2 class="educational-program-text-title">
+            Програма на обучението
+          </h2>
+          <p class="educational-program-text-description">
+            През цялото време на курса ще имаме постоянна двустранна комуникация с децата. Ще имат възможност да ни
+            задават въпроси и да общуват помежду си (най-вече в почивките и след занятия). Ще се забавляваме докато учим
+            как да прогамираме.
+          </p>
+          <p class="educational-program-text-lectures-string">
+            занятия
+          </p>
+          <article class="educational-program-lecture-text-container">
+            <span class="educational-program-lecture-number">1.</span>
+            <span class="educational-program-lecture-name">Цикли и безкрайни цикли</span>
+            <i class="fas fa-chevron-down"></i>
+          </article>
+          <article class="educational-program-lecture-text-container">
+            <span class="educational-program-lecture-number">2.</span>
+            <span class="educational-program-lecture-name">
+              Събития
+            </span>
+            <i class="fas fa-chevron-down"></i>
+          </article>
+          <article class="educational-program-lecture-text-container">
+            <span class="educational-program-lecture-number">3.</span>
+            <span class="educational-program-lecture-name">
+              Презентационни умения. Създаване на цялостен сценарий в Scratch.
+            </span>
+            <i class="fas fa-chevron-down"></i>
+          </article>
+          <article class="educational-program-lecture-text-container">
+            <span class="educational-program-lecture-number">4.</span>
+            <span class="educational-program-lecture-name">
+              Работа по финален проект и презентирането му.
+            </span>
+            <i class="fas fa-chevron-down"></i>
+          </article>
+        </section>
 
-      <article class="educational-program-image-container">
-        <img class="educational-program-image" src="../assets/images/educational-program.svg" alt="educational-program">
+        <section class="educational-program-image-container">
+          <img class="educational-program-image" src="../assets/images/educational-program.svg"
+            alt="educational-program">
+        </section>
       </article>
     </section>
 
@@ -191,7 +209,8 @@
           Сертификат
         </h3>
         <p class="certificate-text-description">
-          Да се опише максимално подробно кога и къде се провеждат занятията. За примера съм изпозлвал описание от
+          Да се опише максимално подробно <strong>кога</strong> и <strong>къде</strong> се провеждат занятията. За
+          примера съм изпозлвал описание от
           онлайн курс
         </p>
       </article>

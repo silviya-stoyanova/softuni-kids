@@ -1,0 +1,132 @@
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.educational-program-container {
+  min-height: 560px;
+  padding: 65px 0;
+  margin-bottom: 64px;
+  background: no-repeat url("../../../assets/images/educational-program-background.svg");
+  background-size: cover;
+}
+
+@media only screen and (min-width: 992px) {
+  .educational-program-container {
+    padding: 65px 0 60px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .educational-program-container {
+    background-size: contain;
+    background-repeat: repeat-x;
+  }
+}
+
+.educational-program-container .educational-program-text-and-image-container {
+  margin: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .educational-program-container .educational-program-text-and-image-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(400px, 680px) minmax(200px, 350px);
+        grid-template-columns: minmax(400px, 680px) minmax(200px, 350px);
+    gap: 140px;
+  }
+}
+
+.educational-program-container .educational-program-text-container {
+  color: #565656;
+}
+
+.educational-program-container .educational-program-text-title {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.educational-program-container .educational-program-text-description {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .educational-program-container .educational-program-text-description {
+    margin-bottom: 25px;
+  }
+}
+
+.educational-program-container .educational-program-text-lectures-string {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .educational-program-container .educational-program-text-lectures-string {
+    margin-bottom: -5px;
+  }
+}
+
+.educational-program-container .educational-program-lecture-text-container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  background: #FFF;
+  border-radius: 6px;
+}
+
+.educational-program-container .educational-program-lecture-number {
+  padding-right: 5px;
+}
+
+.educational-program-container .educational-program-lecture-name {
+  padding-right: 40px;
+}
+
+.educational-program-container .fa-chevron-down {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #919191;
+}
+
+.educational-program-container .educational-program-image-container {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .educational-program-container .educational-program-image-container {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    display: block;
+    max-width: 350px;
+    max-height: 230px;
+  }
+}
+
+.educational-program-container .educational-program-image {
+  max-width: 100%;
+}
+/*# sourceMappingURL=courses-educational-program.css.map */
