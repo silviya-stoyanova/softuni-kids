@@ -23,3 +23,7 @@ option {
     line-height: 20px;
     color: $grey-700;
 }
+
+textarea {
+    resize: none;
+}

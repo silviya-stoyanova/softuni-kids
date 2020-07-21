@@ -34,4 +34,8 @@ option {
   line-height: 20px;
   color: #565656;
 }
+
+textarea {
+  resize: none;
+}
 /*# sourceMappingURL=elements-input-fields.css.map */
