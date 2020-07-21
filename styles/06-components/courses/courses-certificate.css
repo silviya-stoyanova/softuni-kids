@@ -1,0 +1,72 @@
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.certificate-container {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .certificate-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(300px, 545px) minmax(200px, 360px);
+        grid-template-columns: minmax(300px, 545px) minmax(200px, 360px);
+    -ms-grid-rows: 255px;
+        grid-template-rows: 255px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 50px;
+    color: #565656;
+  }
+}
+
+.certificate-container .certificate-text-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  position: relative;
+  padding-left: 60px;
+}
+
+.certificate-container .certificate-text-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: url("../../../assets/icons/certificate.svg");
+  background-size: contain;
+}
+
+.certificate-container .certificate-text-title {
+  margin-top: 0;
+}
+
+.certificate-container .certificate-image-container {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 12px;
+  background: #D6D6D6;
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.certificate-container .certificate-image-text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=courses-certificate.css.map */
