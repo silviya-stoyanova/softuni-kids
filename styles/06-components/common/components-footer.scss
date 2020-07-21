@@ -130,7 +130,8 @@
       font-size: 16px;
       line-height: 19px;
       color: $grey-200;
-
+      transition: 0.3s ease color;
+      
       &:hover {
         color: $green-300;
       }

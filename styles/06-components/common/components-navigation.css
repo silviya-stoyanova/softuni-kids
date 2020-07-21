@@ -95,6 +95,8 @@
   color: #565656;
   text-decoration: none;
   text-transform: uppercase;
+  -webkit-transition: 0.3s ease color;
+  transition: 0.3s ease color;
 }
 
 .navigation-wrapper .navigation-list-item a:hover {
