@@ -13,6 +13,11 @@
 
   a {
     border-bottom: 1px solid $orange-800;
+    transition: 0.5s ease border;
+
+    &:hover {
+      border-bottom-color: transparent;
+    }
   }
 
   .lectures {

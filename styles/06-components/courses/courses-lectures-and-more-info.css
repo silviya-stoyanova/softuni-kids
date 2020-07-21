@@ -25,6 +25,12 @@
 
 .lectures-and-more-info-container a {
   border-bottom: 1px solid #FF9100;
+  -webkit-transition: 0.5s ease border;
+  transition: 0.5s ease border;
+}
+
+.lectures-and-more-info-container a:hover {
+  border-bottom-color: transparent;
 }
 
 .lectures-and-more-info-container .lectures {
