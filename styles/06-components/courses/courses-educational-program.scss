@@ -29,14 +29,33 @@
   }
 
   .educational-program-text-container {
+    position: relative;
     color: $grey-700;
+
+    @include for-desktop-up {
+      padding-left: 60px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background:  0 3px / contain no-repeat url("../../../assets/icons/book.svg");
+    }
   }
 
   .educational-program-text-title {
+    padding-left: 45px;
     margin-top: 0;
     font-weight: 600;
     font-size: 30px;
     line-height: 36px;
+
+    @include for-desktop-up {
+      padding-left: 0px;
+    }
   }
 
   .educational-program-text-description {
@@ -70,6 +89,7 @@
     line-height: 22px;
     background: $white;
     border-radius: 6px;
+    cursor: pointer;
   }
 
   .educational-program-lecture-number {
