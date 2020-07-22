@@ -1,0 +1,37 @@
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.trainers-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 255px;
+  padding: 64px;
+  background-color: #FFB402;
+  text-align: center;
+}
+
+.trainers-header .header-title {
+  margin-top: 0;
+}
+
+.trainers-header .header-description {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=trainers-header.css.map */
