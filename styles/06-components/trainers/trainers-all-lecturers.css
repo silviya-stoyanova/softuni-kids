@@ -1,0 +1,183 @@
+@charset "UTF-8";
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.all-lecturers-container {
+  margin: 65px auto 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container {
+    margin: 100px auto 130px;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (265px)[4];
+      grid-template-rows: repeat(4, 265px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list {
+    -ms-grid-rows: (265px)[3];
+        grid-template-rows: repeat(3, 265px);
+    -ms-grid-columns: (240px)[3];
+        grid-template-columns: repeat(3, 240px);
+    gap: 65px 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .all-lecturers-container .all-lecturers-list {
+    -ms-grid-rows: (265px)[4];
+        grid-template-rows: repeat(4, 265px);
+    -ms-grid-columns: (240px)[4];
+        grid-template-columns: repeat(4, 240px);
+  }
+}
+
+.all-lecturers-container .lecturer-link {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 25px;
+}
+
+.all-lecturers-container .lecturer-link:before {
+  content: "";
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 172px;
+  height: 172px;
+  opacity: 0;
+  border-radius: 50%;
+  color: #FFF;
+  background: #FF9100;
+  -webkit-transition: 0.6s opacity ease-in;
+  transition: 0.6s opacity ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .lecturer-link:before {
+    left: 35px;
+    top: 8px;
+  }
+}
+
+.all-lecturers-container .lecturer-link:after {
+  content: "научи още";
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  justify-items: center;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 172px;
+  height: 172px;
+  font: 10px Lato, sans-serif;
+  line-height: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: transparent;
+  padding-bottom: 40px;
+  -webkit-transition: 0.3s color ease-in;
+  transition: 0.3s color ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .lecturer-link:after {
+    left: 35px;
+    top: 8px;
+  }
+}
+
+.all-lecturers-container .lecturer-link .fa-info:before {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  justify-items: center;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 172px;
+  height: 172px;
+  font-size: 65px;
+  padding-top: 40px;
+  color: transparent;
+  -webkit-transition: 0.3s color ease-in;
+  transition: 0.3s color ease-in;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .lecturer-link .fa-info:before {
+    left: 35px;
+    top: 8px;
+  }
+}
+
+.all-lecturers-container .lecturer-link:hover:before, .all-lecturers-container .lecturer-link:hover:after {
+  opacity: 0.8;
+  color: #FFF;
+}
+
+.all-lecturers-container .lecturer-link:hover .fa-info:before {
+  color: #FFF;
+}
+
+.all-lecturers-container .lecturer-image-container {
+  max-width: 190px;
+}
+
+.all-lecturers-container .lecturer-image {
+  width: 100%;
+  border-radius: 50%;
+  border: 8px solid #41BEAD;
+  overflow: hidden;
+}
+
+.all-lecturers-container .lecturer-name-and-occupation {
+  text-align: center;
+}
+
+.all-lecturers-container .lecturer-name {
+  margin: 0 auto 10px;
+  color: #41BEAD;
+}
+
+.all-lecturers-container .lecturer-occupation {
+  font-size: 14px;
+  line-height: 16px;
+  color: #B2B2B2;
+}
+/*# sourceMappingURL=trainers-all-lecturers.css.map */

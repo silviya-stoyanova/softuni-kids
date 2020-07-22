@@ -1,0 +1,146 @@
+@import "../../01-settings/settings-colors.scss";
+@import "../../01-settings/settings-box-shadows.scss";
+@import "../../02-tools/mixins.scss";
+
+.all-lecturers-container {
+  margin: 65px auto 100px;
+
+  @include for-tablet-up {
+    margin: 100px auto 130px;
+  }
+
+  .all-lecturers-list {
+    display: grid;
+    grid-template-rows: repeat(4, 265px);
+    justify-content: center;
+    gap: 50px;
+
+    @include for-tablet-up {
+      grid-template-rows: repeat(3, 265px);
+      grid-template-columns: repeat(3, 240px);
+      gap: 65px 30px;
+    }
+
+    @include for-desktop-up {
+      grid-template-rows: repeat(4, 265px);
+      grid-template-columns: repeat(4, 240px);
+    }
+  }
+
+  .all-lecturers-list-item {
+  }
+
+  .lecturer-link {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    gap: 25px;
+
+    &:before {
+      content: "";
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      width: 172px;
+      height: 172px;
+      opacity: 0;
+      border-radius: 50%;
+      color: $white;
+      background: $orange-800;
+      transition: 0.6s opacity ease-in;
+
+      @include for-tablet-up {
+        left: 35px;
+        top: 8px;
+      }
+    }
+
+    &:after {
+      content: "научи още";
+      display: grid;
+      align-items: flex-end;
+      justify-items: center;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      width: 172px;
+      height: 172px;
+      font: 10px Lato, sans-serif;
+      line-height: 12px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: transparent;
+      padding-bottom: 40px;
+      transition: 0.3s color ease-in;
+
+      @include for-tablet-up {
+        left: 35px;
+        top: 8px;
+      }
+    }
+
+    // move the following declaration where it belongs to
+    .fa-info:before {
+      display: grid;
+      align-items: baseline;
+      justify-items: center;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+      width: 172px;
+      height: 172px;
+      font-size: 65px;
+      padding-top: 40px;
+      color: transparent;
+      transition: 0.3s color ease-in;
+
+      @include for-tablet-up {
+        left: 35px;
+        top: 8px;
+      }
+    }
+
+    &:hover {
+      &:before,
+      &:after {
+        opacity: 0.8;
+        color: $white;
+      }
+
+      .fa-info:before {
+        color: $white;
+      }
+    }
+  }
+
+  .lecturer-image-container {
+    //align-self: start;
+    max-width: 190px;
+  }
+
+  .lecturer-image {
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid $green-300;
+    overflow: hidden;
+  }
+
+  .lecturer-name-and-occupation {
+    text-align: center;
+  }
+
+  .lecturer-name {
+    margin: 0 auto 10px;
+    color: $green-300;
+  }
+
+  .lecturer-occupation {
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey-400;
+  }
+}
