@@ -37,21 +37,15 @@
     justify-content: center;
     gap: 25px;
 
-    &:before {
-      content: "";
+    &:before,
+    &:after {
       display: grid;
-      align-items: center;
       justify-items: center;
       position: absolute;
       left: 8px;
       top: 8px;
       width: 172px;
       height: 172px;
-      opacity: 0;
-      border-radius: 50%;
-      color: $white;
-      background: $orange-800;
-      transition: 0.6s opacity ease-in;
 
       @include for-tablet-up {
         left: 35px;
@@ -59,16 +53,19 @@
       }
     }
 
+    &:before {
+      content: "";
+      align-items: center;
+      opacity: 0;
+      border-radius: 50%;
+      color: $white;
+      background: $orange-800;
+      transition: 0.6s opacity ease-in;
+    }
+
     &:after {
       content: "научи още";
-      display: grid;
       align-items: flex-end;
-      justify-items: center;
-      position: absolute;
-      left: 8px;
-      top: 8px;
-      width: 172px;
-      height: 172px;
       font: 10px Lato, sans-serif;
       line-height: 12px;
       font-weight: bold;
@@ -76,32 +73,6 @@
       color: transparent;
       padding-bottom: 40px;
       transition: 0.3s color ease-in;
-
-      @include for-tablet-up {
-        left: 35px;
-        top: 8px;
-      }
-    }
-
-    // move the following declaration where it belongs to
-    .fa-info:before {
-      display: grid;
-      align-items: baseline;
-      justify-items: center;
-      position: absolute;
-      left: 8px;
-      top: 8px;
-      width: 172px;
-      height: 172px;
-      font-size: 65px;
-      padding-top: 40px;
-      color: transparent;
-      transition: 0.3s color ease-in;
-
-      @include for-tablet-up {
-        left: 35px;
-        top: 8px;
-      }
     }
 
     &:hover {
@@ -118,8 +89,27 @@
   }
 
   .lecturer-image-container {
-    //align-self: start;
     max-width: 190px;
+  }
+
+  .fa-info:before {
+    display: grid;
+    align-items: baseline;
+    justify-items: center;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    width: 172px;
+    height: 172px;
+    font-size: 65px;
+    padding-top: 40px;
+    color: transparent;
+    transition: 0.3s color ease-in;
+
+    @include for-tablet-up {
+      left: 35px;
+      top: 8px;
+    }
   }
 
   .lecturer-image {
