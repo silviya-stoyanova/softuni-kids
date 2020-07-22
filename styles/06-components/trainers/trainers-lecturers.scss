@@ -1,0 +1,68 @@
+@import "../../01-settings/settings-colors.scss";
+@import "../../01-settings/settings-box-shadows.scss";
+@import "../../02-tools/mixins.scss";
+
+.lecturers-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 65px;
+  margin: 50px auto 0;
+  padding-bottom: 64px;
+  border-bottom: 10px dotted $green-50;
+
+  @include for-desktop-up {
+    padding-bottom: 100px;
+    margin: 100px auto 0;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .lecturer {
+    display: grid;
+    grid-template-rows: 190px 1fr;
+    justify-items: center;
+    gap: 30px;
+
+    @include for-desktop-up {
+      grid-template-rows: 1fr;
+      grid-template-columns: 190px 1fr;
+      gap: 30px;
+    }
+  }
+
+  .lecturer-image-container {
+    align-self: start;
+    max-width: 190px;
+  }
+
+  .lecturer-image {
+    width: 100%;
+    border-radius: 50%;
+    border: 8px solid $green-300;
+    overflow: hidden;
+  }
+
+  .lecturer-description-container {
+  }
+
+  .lecturer-name-and-occupation {
+    text-align: center;
+  }
+
+  .lecturer-name {
+    margin: 0 auto 10px;
+    color: $green-300;
+  }
+
+  .lecturer-occupation {
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey-400;
+  }
+
+  .lecturer-description {
+    margin: 25px auto 0;
+    color: $grey-700;
+  }
+}
