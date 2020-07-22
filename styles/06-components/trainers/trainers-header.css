@@ -22,9 +22,13 @@
       -ms-flex-align: center;
           align-items: center;
   min-height: 255px;
-  padding: 64px;
+  padding: 64px 0;
   background-color: #FFB402;
   text-align: center;
+}
+
+.trainers-header .trainers-header-inner-container {
+  max-width: 950px;
 }
 
 .trainers-header .header-title {
