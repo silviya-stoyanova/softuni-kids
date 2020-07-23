@@ -47,8 +47,13 @@
 
 @media only screen and (min-width: 992px) {
   .footer .footer-image-container {
-    display: block;
     position: relative;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer .footer-image-container {
+    display: block;
   }
 }
 
@@ -79,7 +84,7 @@
   padding: 50px 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .footer .footer-list {
     -ms-grid-columns: 255px 145px 140px 180px;
         grid-template-columns: 255px 145px 140px 180px;
