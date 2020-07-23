@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,KAAK,ECHD,IAAI;CDaX",
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACJ,KAAK,ECHD,IAAI;CDIX",
     "sources": [
         "components-header.scss",
         "../../01-settings/settings-colors.scss"
