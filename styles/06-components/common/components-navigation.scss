@@ -34,11 +34,17 @@
         padding: 0;
         margin-left: 45px;
         background: center / contain no-repeat url("../../../assets/icons/logo-mobile.svg");
+        top: 0;
+        transition: 1s top cubic-bezier(0.175, 1.885, 0.32, 2.275);
 
         @include for-desktop-up {
             min-width: 120px;
             min-height: 40px;
             background-image: url("../../../assets/icons/logo-desktop.svg");
+        }
+
+        &:hover {
+            top: 10px;
         }
 
         .fa-caret-right {

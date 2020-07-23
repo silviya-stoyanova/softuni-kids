@@ -54,6 +54,9 @@
   padding: 0;
   margin-left: 45px;
   background: center/contain no-repeat url("../../../assets/icons/logo-mobile.svg");
+  top: 0;
+  -webkit-transition: 1s top cubic-bezier(0.175, 1.885, 0.32, 2.275);
+  transition: 1s top cubic-bezier(0.175, 1.885, 0.32, 2.275);
 }
 
 @media only screen and (min-width: 992px) {
@@ -62,6 +65,10 @@
     min-height: 40px;
     background-image: url("../../../assets/icons/logo-desktop.svg");
   }
+}
+
+.navigation-wrapper .navigation-logo:hover {
+  top: 10px;
 }
 
 .navigation-wrapper .navigation-logo .fa-caret-right {
