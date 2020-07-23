@@ -98,7 +98,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  font: 10px Lato, sans-serif;
+  font-size: 10px;
   line-height: 12px;
   font-weight: bold;
   text-transform: uppercase;
