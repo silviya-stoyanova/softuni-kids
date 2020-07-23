@@ -97,6 +97,11 @@
     .search-icon {
         margin: 0 0 0 10px;
         cursor: pointer;
+        transition: 1s ease filter;
+
+        &:hover {
+            filter: brightness(0.5);
+        }
     }
 
     .login-btn-wrapper {
