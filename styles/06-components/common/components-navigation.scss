@@ -23,22 +23,22 @@
         padding: 0;
 
         @include for-tablet-up {
-            padding: 0 50px;
+            padding: 0 20px;
         }
     }
 
     .navigation-logo {
         position: relative;
+        min-width: 45px;
+        min-height: 55px;
+        padding: 0;
         margin-left: 45px;
-        background: url("../../../assets/icons/logo-mobile.svg");
-        //cursor: pointer;
-        width: 45px;
-        height: 55px;
+        background: center / contain no-repeat url("../../../assets/icons/logo-mobile.svg");
 
         @include for-desktop-up {
-            background: url("../../../assets/icons/logo-desktop.svg");
-            width: 120px;
-            height: 40px;
+            min-width: 120px;
+            min-height: 40px;
+            background-image: url("../../../assets/icons/logo-desktop.svg");
         }
 
         .fa-caret-right {

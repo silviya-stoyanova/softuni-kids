@@ -43,23 +43,24 @@
 
 @media only screen and (min-width: 768px) {
   .navigation-wrapper .navigation {
-    padding: 0 50px;
+    padding: 0 20px;
   }
 }
 
 .navigation-wrapper .navigation-logo {
   position: relative;
+  min-width: 45px;
+  min-height: 55px;
+  padding: 0;
   margin-left: 45px;
-  background: url("../../../assets/icons/logo-mobile.svg");
-  width: 45px;
-  height: 55px;
+  background: center/contain no-repeat url("../../../assets/icons/logo-mobile.svg");
 }
 
 @media only screen and (min-width: 992px) {
   .navigation-wrapper .navigation-logo {
-    background: url("../../../assets/icons/logo-desktop.svg");
-    width: 120px;
-    height: 40px;
+    min-width: 120px;
+    min-height: 40px;
+    background-image: url("../../../assets/icons/logo-desktop.svg");
   }
 }
 
