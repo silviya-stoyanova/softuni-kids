@@ -29,19 +29,24 @@
 
   .contact-us-input-field,
   .contact-us-textarea {
-    border: 1px solid $grey-500;
     border-radius: 6px;
+    border: 1px solid $grey-500;
+    transition: 0.5s border-color ease-in;
+    padding: 10px 10px 15px;
 
     &::placeholder {
       font-size: 16px;
       line-height: 19px;
       color: $grey-500;
-      padding: 15px;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $orange-800;
     }
   }
 
   .contact-us-input-field {
-    padding: 10px 10px 15px;
   }
 
   .contact-us-textarea {

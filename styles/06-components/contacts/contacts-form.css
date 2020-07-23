@@ -44,8 +44,11 @@
 
 .contact-us-form-container .contact-us-input-field,
 .contact-us-form-container .contact-us-textarea {
-  border: 1px solid #919191;
   border-radius: 6px;
+  border: 1px solid #919191;
+  -webkit-transition: 0.5s border-color ease-in;
+  transition: 0.5s border-color ease-in;
+  padding: 10px 10px 15px;
 }
 
 .contact-us-form-container .contact-us-input-field::-webkit-input-placeholder,
@@ -53,7 +56,6 @@
   font-size: 16px;
   line-height: 19px;
   color: #919191;
-  padding: 15px;
 }
 
 .contact-us-form-container .contact-us-input-field:-ms-input-placeholder,
@@ -61,7 +63,6 @@
   font-size: 16px;
   line-height: 19px;
   color: #919191;
-  padding: 15px;
 }
 
 .contact-us-form-container .contact-us-input-field::-ms-input-placeholder,
@@ -69,7 +70,6 @@
   font-size: 16px;
   line-height: 19px;
   color: #919191;
-  padding: 15px;
 }
 
 .contact-us-form-container .contact-us-input-field::placeholder,
@@ -77,11 +77,12 @@
   font-size: 16px;
   line-height: 19px;
   color: #919191;
-  padding: 15px;
 }
 
-.contact-us-form-container .contact-us-input-field {
-  padding: 10px 10px 15px;
+.contact-us-form-container .contact-us-input-field:focus,
+.contact-us-form-container .contact-us-textarea:focus {
+  outline: none;
+  border: 1px solid #FF9100;
 }
 
 @media only screen and (min-width: 768px) {
