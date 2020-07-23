@@ -29,10 +29,12 @@
 
 .trainers-header .trainers-header-inner-container {
   max-width: 950px;
+  margin: 0 auto;
 }
 
 .trainers-header .header-title {
   margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .trainers-header .header-description {
