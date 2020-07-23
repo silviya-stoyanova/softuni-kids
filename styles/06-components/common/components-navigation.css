@@ -117,6 +117,9 @@
 }
 
 .navigation-wrapper .navigation-list-item a {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: bold;
   color: #565656;
   text-decoration: none;
   text-transform: uppercase;
