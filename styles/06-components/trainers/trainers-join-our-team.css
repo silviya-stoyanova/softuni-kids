@@ -1,0 +1,144 @@
+/* Shadow 0dp */
+/* Shadow 1dp */
+/* Shadow 2dp */
+/* Shadow 3dp */
+/* Shadow 4dp */
+/* Shadow 6dp */
+/* Shadow 8dp */
+/* Shadow 9dp */
+/* Shadow 12dp */
+/* Shadow 16dp */
+/* Shadow 24dp */
+.join-our-team {
+  min-height: 410px;
+  color: #FFF;
+  background: #66B9F8;
+  border-top: 12px solid #92CDFB;
+}
+
+.join-our-team .join-our-team-inner-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 0.5fr 2fr;
+      grid-template-rows: 0.5fr 2fr;
+  gap: 50px;
+  padding: 65px 20px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 992px) {
+  .join-our-team .join-our-team-inner-container {
+    -ms-grid-rows: 1fr 50px;
+        grid-template-rows: 1fr 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    padding: 65px 20px 130px;
+  }
+}
+
+.join-our-team .join-our-team-text-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (min-content)[2];
+      grid-template-rows: repeat(2, -webkit-min-content);
+      grid-template-rows: repeat(2, min-content);
+  gap: 25px;
+}
+
+.join-our-team .join-our-team-title {
+  margin: 0;
+}
+
+.join-our-team .join-our-team-description {
+  margin: 0;
+}
+
+.join-our-team .join-our-team-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (50px)[3] 1fr;
+      grid-template-rows: repeat(3, 50px) 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media only screen and (min-width: 992px) {
+  .join-our-team .join-our-team-form {
+    -ms-grid-rows: 50px;
+        grid-template-rows: 50px;
+    -ms-grid-columns: (230px)[3] 1fr;
+        grid-template-columns: repeat(3, 230px) 1fr;
+  }
+}
+
+.join-our-team .join-our-team-input-field {
+  padding: 16px;
+  line-height: 19px;
+  background: none;
+  border-radius: 6px;
+  border: 1px solid white;
+  -webkit-transition: 0.5s border-color ease-in;
+  transition: 0.5s border-color ease-in;
+}
+
+.join-our-team .join-our-team-input-field, .join-our-team .join-our-team-input-field::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+}
+
+.join-our-team .join-our-team-input-field, .join-our-team .join-our-team-input-field:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+}
+
+.join-our-team .join-our-team-input-field, .join-our-team .join-our-team-input-field::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+}
+
+.join-our-team .join-our-team-input-field, .join-our-team .join-our-team-input-field::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+}
+
+.join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field::-webkit-input-placeholder:focus {
+  outline: none;
+  border: 1px solid #FFC20A;
+}
+
+.join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field:-ms-input-placeholder:focus {
+  outline: none;
+  border: 1px solid #FFC20A;
+}
+
+.join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field::-ms-input-placeholder:focus {
+  outline: none;
+  border: 1px solid #FFC20A;
+}
+
+.join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field::placeholder:focus {
+  outline: none;
+  border: 1px solid #FFC20A;
+}
+
+.join-our-team .join-our-team-btn {
+  margin: 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .join-our-team .join-our-team-btn {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    justify-self: baseline;
+    margin-left: 15px;
+  }
+}
+/*# sourceMappingURL=trainers-join-our-team.css.map */

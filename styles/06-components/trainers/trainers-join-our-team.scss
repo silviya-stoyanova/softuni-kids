@@ -1,0 +1,82 @@
+@import "../../01-settings/settings-colors.scss";
+@import "../../01-settings/settings-box-shadows.scss";
+@import "../../02-tools/mixins.scss";
+
+.join-our-team {
+  min-height: 410px;
+  color: $white;
+  background: $blue-300;
+  border-top: 12px solid $blue-200;
+
+  .join-our-team-inner-container {
+    display: grid;
+    grid-template-rows: 0.5fr 2fr;
+    gap: 50px;
+    padding: 65px 20px;
+    margin: 0 auto;
+
+    @include for-desktop-up {
+      grid-template-rows: 1fr 50px;
+      justify-content: center;
+      text-align: center;
+      padding: 65px 20px 130px;
+    }
+  }
+
+  .join-our-team-text-container {
+    display: grid;
+    grid-template-rows: repeat(2, min-content);
+    gap: 25px;
+  }
+
+  .join-our-team-title {
+    margin: 0;
+  }
+
+  .join-our-team-description {
+    margin: 0;
+  }
+
+  .join-our-team-form {
+    display: grid;
+    grid-template-rows: repeat(3, 50px) 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+
+    @include for-desktop-up {
+      grid-template-rows: 50px;
+      grid-template-columns: repeat(3, 230px) 1fr;
+    }
+  }
+
+  .join-our-team-input-field {
+    padding: 16px;
+    line-height: 19px;
+    background: none;
+    border-radius: 6px;
+    border: 1px solid white;
+    transition: 0.5s border-color ease-in;
+
+    &,
+    &::placeholder {
+      font-size: 16px;
+      line-height: 19px;
+      color: inherit;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $orange-500;
+      }
+    }
+  }
+
+  .join-our-team-btn {
+    margin: 0px;
+
+    @include for-desktop-up {
+      align-self: center;
+      justify-self: baseline;
+      margin-left: 15px;
+    }
+  }
+}
