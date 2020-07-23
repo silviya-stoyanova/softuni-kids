@@ -41,6 +41,8 @@
   width: 220px;
   position: absolute;
   bottom: 0;
+  -webkit-transition: 1s bottom cubic-bezier(0.175, 1.885, 0.32, 2.275);
+  transition: 1s bottom cubic-bezier(0.175, 1.885, 0.32, 2.275);
 }
 
 @media only screen and (min-width: 992px) {
@@ -48,6 +50,10 @@
     display: block;
     position: relative;
   }
+}
+
+.footer .footer-image-container:hover {
+  bottom: 50px;
 }
 
 .footer .footer-image {

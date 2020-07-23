@@ -27,10 +27,15 @@
     width: 220px;
     position: absolute;
     bottom: 0;
+    transition: 1s bottom cubic-bezier(0.175, 1.885, 0.32, 2.275);
 
     @include for-desktop-up {
       display: block;
       position: relative;
+    }
+
+    &:hover {
+      bottom: 50px;
     }
   }
 
@@ -131,7 +136,7 @@
       line-height: 19px;
       color: $grey-200;
       transition: 0.3s ease color;
-      
+
       &:hover {
         color: $green-300;
       }
