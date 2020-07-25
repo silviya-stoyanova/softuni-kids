@@ -30,10 +30,6 @@
   }
 }
 
-.educational-program-container .educational-program-text-and-image-container {
-  margin: 0;
-}
-
 @media only screen and (min-width: 992px) {
   .educational-program-container .educational-program-text-and-image-container {
     display: -ms-grid;

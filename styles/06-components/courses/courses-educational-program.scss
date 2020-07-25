@@ -19,8 +19,6 @@
   }
 
   .educational-program-text-and-image-container {
-    margin: 0;
-
     @include for-desktop-up {
       display: grid;
       grid-template-columns: minmax(400px, 680px) minmax(200px, 350px);
@@ -42,7 +40,7 @@
       left: 0;
       width: 30px;
       height: 30px;
-      background:  0 3px / contain no-repeat url("../../../assets/icons/book.svg");
+      background: 0 3px / contain no-repeat url("../../../assets/icons/book.svg");
     }
   }
 
