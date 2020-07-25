@@ -27,10 +27,16 @@
   min-height: 300px;
   text-align: center;
   background-color: #44A9F8;
-  margin-bottom: 400px;
+  margin-bottom: 620px;
 }
 
 @media only screen and (min-width: 768px) {
+  .course-header {
+    margin-bottom: 250px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .course-header {
     margin-bottom: 0;
   }
@@ -51,7 +57,7 @@
   width: 90%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .course-header .header-title {
     width: 39%;
   }
@@ -74,7 +80,6 @@
           align-items: center;
   position: absolute;
   left: 0;
-  bottom: -315px;
   margin: 0 20px;
   min-height: 112px;
   max-width: 1290px;
@@ -86,7 +91,7 @@
           clip-path: inset(0% -1% -2% -1%);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .course-header .course-intro-inner-container {
     -ms-grid-rows: 50px;
         grid-template-rows: 50px;
@@ -106,7 +111,7 @@
   overflow: hidden;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .course-header .course-intro-dots-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -230,7 +235,7 @@
   padding: 46px 24px 24px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .course-header .course-intro-button-container {
     padding: 0;
   }
@@ -241,7 +246,7 @@
   margin: 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .course-header .course-intro-button {
     width: auto;
   }
@@ -289,7 +294,7 @@
   gap: 6px 24px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .course-header .course-intro-list-item:first-child:after {
     right: 0;
   }
@@ -312,7 +317,7 @@
   background: #181818;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .course-header .course-intro-list-item:not(:last-child):after {
     right: -25px;
     bottom: unset;

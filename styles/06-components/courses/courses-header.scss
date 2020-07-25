@@ -14,9 +14,13 @@ $course-intro-dots: 30;
   text-align: center;
   background-color: $blue-400;
 
-  margin-bottom: 400px;
+  margin-bottom: 620px;
 
   @include for-tablet-up {
+    margin-bottom: 250px;
+  }
+
+  @include for-large-desktop-up {
     margin-bottom: 0;
   }
 
@@ -33,7 +37,7 @@ $course-intro-dots: 30;
   .header-title {
     width: 90%;
 
-    @include for-tablet-up {
+    @include for-large-desktop-up {
       width: 39%;
     }
   }
@@ -50,7 +54,7 @@ $course-intro-dots: 30;
     align-items: center;
     position: absolute;
     left: 0;
-    bottom: -315px;
+    //bottom: -315px;
     margin: 0 20px;
     min-height: 112px;
     max-width: 1290px;
@@ -59,7 +63,7 @@ $course-intro-dots: 30;
     box-shadow: $shadow-1;
     clip-path: inset(0% -1% -2% -1%);
 
-    @include for-tablet-up {
+    @include for-large-desktop-up {
       grid-template-rows: 50px;
       grid-template-columns: 160px 1fr;
       gap: 135px;
@@ -75,7 +79,7 @@ $course-intro-dots: 30;
     max-height: 25px;
     overflow: hidden;
 
-    @include for-tablet-up {
+    @include for-large-desktop-up {
       display: flex;
       flex-direction: column;
       max-height: unset;
@@ -135,7 +139,7 @@ $course-intro-dots: 30;
   .course-intro-button-container {
     padding: 46px 24px 24px;
 
-    @include for-tablet-up {
+    @include for-large-desktop-up {
       padding: 0;
     }
   }
@@ -144,7 +148,7 @@ $course-intro-dots: 30;
     width: 100%;
     margin: 0;
 
-    @include for-tablet-up {
+    @include for-large-desktop-up {
       width: auto;
     }
   }
@@ -175,7 +179,7 @@ $course-intro-dots: 30;
 
     &:first-child {
       &:after {
-        @include for-tablet-up {
+        @include for-large-desktop-up {
           right: 0;
         }
       }
@@ -195,7 +199,7 @@ $course-intro-dots: 30;
         background: $grey-100;
         background: $grey-900;
 
-        @include for-tablet-up {
+        @include for-large-desktop-up {
           right: -25px;
           bottom: unset;
           transform: unset;
