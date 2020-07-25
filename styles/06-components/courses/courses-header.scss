@@ -2,7 +2,7 @@
 @import "../../01-settings/settings-box-shadows.scss";
 @import "../../02-tools/mixins.scss";
 
-$course-intro-dots: 18;
+$course-intro-dots: 30;
 
 .course-header {
   position: relative;
@@ -11,9 +11,14 @@ $course-intro-dots: 18;
   justify-content: center;
   align-items: center;
   min-height: 300px;
-  //padding-bottom: 60px;
   text-align: center;
   background-color: $blue-400;
+
+  margin-bottom: 400px;
+
+  @include for-tablet-up {
+    margin-bottom: 0;
+  }
 
   .course-level {
     font-size: 12px;
@@ -38,35 +43,44 @@ $course-intro-dots: 18;
   }
 
   .course-intro-inner-container {
-    position: relative;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 24px;
     align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: -315px;
+    margin: 0 20px;
     min-height: 112px;
     max-width: 1290px;
-    bottom: -145px;
     background: $white;
     border-radius: 12px;
     box-shadow: $shadow-1;
     clip-path: inset(0% -1% -2% -1%);
 
     @include for-tablet-up {
-      grid-template-rows: 1fr;
-      grid-template-columns: 290px 1fr;
+      grid-template-rows: 50px;
+      grid-template-columns: 160px 1fr;
+      gap: 135px;
+      position: relative;
       bottom: -70px;
+      left: unset;
+      margin: 0 auto;
+      padding: 32px 90px 32px 64px;
     }
   }
 
   .course-intro-dots-container {
-    position: absolute;
-    left: 220px;
+    max-height: 25px;
+    overflow: hidden;
 
     @include for-tablet-up {
       display: flex;
       flex-direction: column;
-      transform: translateX(90px);
+      max-height: unset;
+      position: absolute;
+      left: 310px;
 
       @for $i from 1 through $course-intro-dots {
         @if $i < 4 {
@@ -119,7 +133,7 @@ $course-intro-dots: 18;
   }
 
   .course-intro-button-container {
-    padding: 46px 24px 0;
+    padding: 46px 24px 24px;
 
     @include for-tablet-up {
       padding: 0;
@@ -140,6 +154,8 @@ $course-intro-dots: 18;
     grid-template-rows: repeat(4, 1fr);
     justify-content: left;
     align-items: center;
+    gap: 50px;
+    padding: 24px;
 
     @include for-tablet-up {
       grid-template-columns: repeat(4, 1fr);
@@ -151,8 +167,10 @@ $course-intro-dots: 18;
   .course-intro-list-item {
     display: grid;
     align-items: center;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 25px);
+    grid-template-columns: 32px 2fr;
+    justify-items: left;
+    gap: 6px 24px;
 
     &:not(:last-child) {
       position: relative;
@@ -160,10 +178,20 @@ $course-intro-dots: 18;
       &:after {
         content: "";
         position: absolute;
-        right: 0;
         width: 2px;
         height: 25px;
+        bottom: -30px;
+        left: 12px;
+        transform: rotate(90deg);
         background: $grey-100;
+        background: $grey-900;
+
+        @include for-tablet-up {
+          right: 0;
+          bottom: unset;
+          transform: unset;
+          left: unset;
+        }
       }
     }
   }
