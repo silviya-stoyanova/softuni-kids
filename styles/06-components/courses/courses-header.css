@@ -41,7 +41,13 @@
 }
 
 .course-header .header-title {
-  width: 39%;
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .course-header .header-title {
+    width: 39%;
+  }
 }
 
 .course-header .course-intro-container {
