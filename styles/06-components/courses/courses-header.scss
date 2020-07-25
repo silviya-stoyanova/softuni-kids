@@ -26,7 +26,11 @@ $course-intro-dots: 18;
   }
 
   .header-title {
-    width: 39%;
+    width: 90%;
+
+    @include for-tablet-up {
+      width: 39%;
+    }
   }
 
   .course-intro-container {
