@@ -2,6 +2,8 @@
 @import "../../01-settings/settings-box-shadows.scss";
 @import "../../02-tools/mixins.scss";
 
+$course-intro-dots: 18;
+
 .course-header {
   position: relative;
   display: flex;
@@ -28,43 +30,80 @@
   }
 
   .course-intro-container {
+    position: relative;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     gap: 60px;
     align-items: center;
+    min-height: 112px;
+    max-width: 1290px;
+    margin: 0 20px;
     position: absolute;
-    min-height: 110px;
-    //padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
     bottom: -19%;
     background: $white;
     border-radius: 12px;
     box-shadow: $shadow-1;
-
-    &:before {
-      content: "";
-      position: absolute;
-      top: -5px;
-      right: -5px;
-      left: -5px;
-      bottom: -5px;
-      background: url("../../../assets/images/course-intro-background-mobile.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
+    clip-path: inset(0% 0% -2% 0%);
 
     @include for-tablet-up {
-      &:before {
-        background: url("../../../assets/images/course-intro-background-desktop.svg");
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
-
       grid-template-rows: 1fr;
       grid-template-columns: 290px 1fr;
-      //background: center url("../../../assets/images/course-intro-background-desktop.svg");
+      margin: 0;
+    }
+  }
+
+  .course-intro-dots-container {
+    position: absolute;
+    left: 250px;
+
+    @include for-tablet-up {
+      display: flex;
+      flex-direction: column;
+      transform: translateX(90px);
+
+      @for $i from 1 through $course-intro-dots {
+        @if $i < 4 {
+          .course-intro-dot:nth-child(#{$i}) {
+            background: $blue-400;
+          }
+        }
+
+        @if $i == 4 {
+          .course-intro-dot:nth-child(#{$i}) {
+            overflow: hidden;
+
+            .course-intro-half-dot-blue {
+              width: 100%;
+              height: 50%;
+              display: block;
+              background: $blue-400;
+            }
+          }
+        }
+
+        @if $i == 7 {
+          .course-intro-dot:nth-child(#{$i}) {
+            background: $white;
+          }
+        }
+
+        @if $i >= 8 {
+          .course-intro-dot:nth-child(#{$i}) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .course-intro-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 3.5px;
+      border-radius: 50%;
+      box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2), inset 0px 2px 2px rgba(0, 0, 0, 0.12),
+        inset 0px 0px 2px rgba(0, 0, 0, 0.14);
     }
   }
 
@@ -73,10 +112,25 @@
     z-index: 1;
   }
 
+  .course-intro-button {
+    width: 100%;
+
+    @include for-tablet-up {
+      width: auto;
+    }
+  }
+
   .course-intro-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: left;
     align-items: center;
+
+    @include for-tablet-up {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      justify-content: stretch;
+    }
   }
 
   .course-intro-list-item {
