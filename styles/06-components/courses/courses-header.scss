@@ -33,7 +33,11 @@ $course-intro-dots: 18;
     }
   }
 
-  .course-intro-container {
+  .course-intro-main-container {
+    margin: 0 auto;
+  }
+
+  .course-intro-inner-container {
     position: relative;
     display: grid;
     grid-template-rows: 1fr;
@@ -42,9 +46,7 @@ $course-intro-dots: 18;
     align-items: center;
     min-height: 112px;
     max-width: 1290px;
-    margin: 0 20px;
-    position: absolute;
-    bottom: -19%;
+    bottom: -145px;
     background: $white;
     border-radius: 12px;
     box-shadow: $shadow-1;
@@ -53,13 +55,13 @@ $course-intro-dots: 18;
     @include for-tablet-up {
       grid-template-rows: 1fr;
       grid-template-columns: 290px 1fr;
-      margin: 0;
+      bottom: -70px;
     }
   }
 
   .course-intro-dots-container {
     position: absolute;
-    left: 250px;
+    left: 220px;
 
     @include for-tablet-up {
       display: flex;
@@ -116,8 +118,17 @@ $course-intro-dots: 18;
     z-index: 1;
   }
 
+  .course-intro-button-container {
+    padding: 46px 24px 0;
+
+    @include for-tablet-up {
+      padding: 0;
+    }
+  }
+
   .course-intro-button {
     width: 100%;
+    margin: 0;
 
     @include for-tablet-up {
       width: auto;
