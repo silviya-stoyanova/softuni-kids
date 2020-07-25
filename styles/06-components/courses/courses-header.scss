@@ -80,7 +80,7 @@ $course-intro-dots: 30;
       flex-direction: column;
       max-height: unset;
       position: absolute;
-      left: 310px;
+      left: 285px;
 
       @for $i from 1 through $course-intro-dots {
         @if $i < 4 {
@@ -161,6 +161,7 @@ $course-intro-dots: 30;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
       justify-content: stretch;
+      padding: 0;
     }
   }
 
@@ -171,6 +172,14 @@ $course-intro-dots: 30;
     grid-template-columns: 32px 2fr;
     justify-items: left;
     gap: 6px 24px;
+
+    &:first-child {
+      &:after {
+        @include for-tablet-up {
+          right: 0;
+        }
+      }
+    }
 
     &:not(:last-child) {
       position: relative;
@@ -187,7 +196,7 @@ $course-intro-dots: 30;
         background: $grey-900;
 
         @include for-tablet-up {
-          right: 0;
+          right: -25px;
           bottom: unset;
           transform: unset;
           left: unset;

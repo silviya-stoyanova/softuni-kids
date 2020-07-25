@@ -117,7 +117,7 @@
             flex-direction: column;
     max-height: unset;
     position: absolute;
-    left: 310px;
+    left: 285px;
   }
   .course-header .course-intro-dots-container .course-intro-dot:nth-child(1) {
     background: #44A9F8;
@@ -271,6 +271,7 @@
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
             justify-content: stretch;
+    padding: 0;
   }
 }
 
@@ -286,6 +287,12 @@
       grid-template-columns: 32px 2fr;
   justify-items: left;
   gap: 6px 24px;
+}
+
+@media only screen and (min-width: 768px) {
+  .course-header .course-intro-list-item:first-child:after {
+    right: 0;
+  }
 }
 
 .course-header .course-intro-list-item:not(:last-child) {
@@ -307,7 +314,7 @@
 
 @media only screen and (min-width: 768px) {
   .course-header .course-intro-list-item:not(:last-child):after {
-    right: 0;
+    right: -25px;
     bottom: unset;
     -webkit-transform: unset;
             transform: unset;
