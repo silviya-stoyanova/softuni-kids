@@ -48,7 +48,7 @@ $course-intro-dots: 18;
     background: $white;
     border-radius: 12px;
     box-shadow: $shadow-1;
-    clip-path: inset(0% 0% -2% 0%);
+    clip-path: inset(0% -1% -2% -1%);
 
     @include for-tablet-up {
       grid-template-rows: 1fr;
