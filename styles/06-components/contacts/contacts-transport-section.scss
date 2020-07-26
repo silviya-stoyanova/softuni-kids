@@ -9,15 +9,11 @@
 
   .transport-to-softuni {
     display: grid;
-    //grid-template-rows: 35px 1fr;
-    //grid-template-columns: repeat(3, 1fr);
-    //// grid-template-columns: repeat(3, 395px);
     gap: 50px 35px;
 
     @include for-tablet-up {
       grid-template-rows: 35px 1fr;
       grid-template-columns: repeat(3, 1fr);
-      // grid-template-columns: repeat(3, 395px);
     }
   }
 

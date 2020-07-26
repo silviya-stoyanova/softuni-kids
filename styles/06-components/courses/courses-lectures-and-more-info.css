@@ -10,7 +10,7 @@
 /* Shadow 16dp */
 /* Shadow 24dp */
 .lectures-and-more-info-container {
-  margin-bottom: 100px;
+  margin-bottom: 172px;
   color: #565656;
 }
 
@@ -31,6 +31,31 @@
 
 .lectures-and-more-info-container a:hover {
   border-bottom-color: transparent;
+}
+
+.lectures-and-more-info-container .lectures,
+.lectures-and-more-info-container .more-info {
+  position: relative;
+  padding-left: 60px;
+}
+
+.lectures-and-more-info-container .lectures:before,
+.lectures-and-more-info-container .more-info:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  .lectures-and-more-info-container .lectures:before,
+  .lectures-and-more-info-container .more-info:before {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .lectures-and-more-info-container .lectures {
@@ -54,34 +79,10 @@
   display: inline-flex;
   font-weight: 600;
   line-height: 36px;
-  margin-bottom: 15px;
+  margin: 0 auto 15px;
 }
 
-@media only screen and (min-width: 768px) {
-  .lectures-and-more-info-container .lectures-title,
-  .lectures-and-more-info-container .more-info-title {
-    display: inline-block;
-  }
-  .lectures-and-more-info-container .lectures-title:before,
-  .lectures-and-more-info-container .more-info-title:before {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.lectures-and-more-info-container .lectures-title:before,
-.lectures-and-more-info-container .more-info-title:before {
-  content: "";
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30px;
-          flex: 0 0 30px;
-  display: inline-block;
-  margin-right: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.lectures-and-more-info-container .lectures-title:before {
+.lectures-and-more-info-container .lectures:before {
   background-image: url("../../../assets/icons/clock.svg");
 }
 
@@ -101,7 +102,7 @@
   }
 }
 
-.lectures-and-more-info-container .more-info-title:before {
+.lectures-and-more-info-container .more-info:before {
   background-image: url("../../../assets/icons/bulb.svg");
 }
 /*# sourceMappingURL=courses-lectures-and-more-info.css.map */

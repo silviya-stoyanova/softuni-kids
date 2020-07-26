@@ -17,11 +17,15 @@ $course-intro-dots: 30;
   margin-bottom: 620px;
 
   @include for-tablet-up {
-    margin-bottom: 250px;
+    margin-bottom: 330px;
   }
 
   @include for-large-desktop-up {
     margin-bottom: 0;
+  }
+
+  .course-level-container {
+    
   }
 
   .course-level {
@@ -54,7 +58,6 @@ $course-intro-dots: 30;
     align-items: center;
     position: absolute;
     left: 0;
-    //bottom: -315px;
     margin: 0 20px;
     min-height: 112px;
     max-width: 1290px;
@@ -62,6 +65,19 @@ $course-intro-dots: 30;
     border-radius: 12px;
     box-shadow: $shadow-1;
     clip-path: inset(0% -1% -2% -1%);
+
+    @include for-tablet-up {
+      bottom: -230px;
+      left: unset;
+      width: 89%;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+    }
+
+    @include for-desktop-up {
+      width: 90%;
+    }
 
     @include for-large-desktop-up {
       grid-template-rows: 50px;
@@ -72,6 +88,7 @@ $course-intro-dots: 30;
       left: unset;
       margin: 0 auto;
       padding: 32px 90px 32px 64px;
+      width: 100%;
     }
   }
 
@@ -165,6 +182,14 @@ $course-intro-dots: 30;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 1fr;
       justify-content: stretch;
+      gap: 40px;
+    }
+
+    @include for-desktop-up {
+      gap: 50px;
+    }
+
+    @include for-large-desktop-up {
       padding: 0;
     }
   }
@@ -199,7 +224,7 @@ $course-intro-dots: 30;
         background: $grey-100;
         background: $grey-900;
 
-        @include for-large-desktop-up {
+        @include for-tablet-up {
           right: -25px;
           bottom: unset;
           transform: unset;

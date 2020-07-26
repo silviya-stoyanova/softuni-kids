@@ -23,6 +23,22 @@
   }
 }
 
+.course-suitable-and-skills-container .course-suitable,
+.course-suitable-and-skills-container .course-skills {
+  position: relative;
+}
+
+.course-suitable-and-skills-container .course-suitable:before,
+.course-suitable-and-skills-container .course-skills:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .course-suitable-and-skills-container .course-suitable {
   border-bottom: 10px dotted #FFECB3;
   padding-bottom: 30px;
@@ -32,9 +48,14 @@
   .course-suitable-and-skills-container .course-suitable {
     padding-bottom: 0;
     padding-right: 30px;
+    padding-left: 60px;
     border-bottom: none;
     border-right: 10px dotted #FFECB3;
   }
+}
+
+.course-suitable-and-skills-container .course-suitable:before {
+  background-image: url("../../../assets/icons/people.svg");
 }
 
 .course-suitable-and-skills-container .course-suitable-title,
@@ -44,6 +65,7 @@
   display: inline-flex;
   font-weight: 600;
   line-height: 36px;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -52,27 +74,6 @@
   .course-suitable-and-skills-container .course-skills-title {
     display: inline-block;
   }
-  .course-suitable-and-skills-container .course-suitable-title:before,
-  .course-suitable-and-skills-container .course-skills-title:before {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.course-suitable-and-skills-container .course-suitable-title:before,
-.course-suitable-and-skills-container .course-skills-title:before {
-  content: "";
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30px;
-          flex: 0 0 30px;
-  display: inline-block;
-  margin-right: 20px;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-.course-suitable-and-skills-container .course-suitable-title:before {
-  background-image: url("../../../assets/icons/people.svg");
 }
 
 .course-suitable-and-skills-container .course-suitable-description,
@@ -82,6 +83,7 @@
 
 .course-suitable-and-skills-container .course-skills {
   margin-top: 30px;
+  padding-left: 60px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -91,7 +93,7 @@
   }
 }
 
-.course-suitable-and-skills-container .course-skills-title:before {
+.course-suitable-and-skills-container .course-skills:before {
   background-image: url("../../../assets/icons/bell.svg");
 }
 /*# sourceMappingURL=course-suitable-and-skills.css.map */

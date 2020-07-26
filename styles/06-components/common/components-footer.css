@@ -22,15 +22,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
   .footer .footer-image-and-list-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 220px 1fr;
-        grid-template-columns: 220px 1fr;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
     gap: 80px;
     padding: 0 50px;
   }
@@ -38,7 +37,7 @@
 
 .footer .footer-image-container {
   display: none;
-  width: 220px;
+  max-width: 220px;
   position: absolute;
   bottom: 0;
   -webkit-transition: 1s bottom cubic-bezier(0.175, 1.885, 0.32, 2.275);
@@ -69,6 +68,7 @@
 
 @media only screen and (min-width: 992px) {
   .footer .footer-image {
+    max-width: 100%;
     max-height: 150%;
   }
 }
@@ -86,8 +86,8 @@
 
 @media only screen and (min-width: 992px) {
   .footer .footer-list {
-    -ms-grid-columns: 255px 145px 140px 180px;
-        grid-template-columns: 255px 145px 140px 180px;
+    -ms-grid-columns: minmax(255px, 1fr) minmax(145px, 1fr) minmax(140px, 1fr) minmax(180px, 1fr);
+        grid-template-columns: minmax(255px, 1fr) minmax(145px, 1fr) minmax(140px, 1fr) minmax(180px, 1fr);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
     gap: 80px;

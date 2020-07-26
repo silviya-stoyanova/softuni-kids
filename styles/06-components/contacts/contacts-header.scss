@@ -62,9 +62,13 @@
 
   .header-working-time-container {
     display: grid;
-    grid-template-columns: 90px 105px;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 20px 25px;
+
+    @include for-tablet-up {
+      grid-template-columns: 90px 105px;
+    }
   }
 
   .header-working-hours,

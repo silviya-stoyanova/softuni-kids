@@ -79,11 +79,18 @@
 .contacts-header .header-working-time-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 90px 105px;
-      grid-template-columns: 90px 105px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   gap: 20px 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-header .header-working-time-container {
+    -ms-grid-columns: 90px 105px;
+        grid-template-columns: 90px 105px;
+  }
 }
 
 .contacts-header .header-working-hours,

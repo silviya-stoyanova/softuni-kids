@@ -11,6 +11,21 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .course-suitable,
+  .course-skills {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+
   .course-suitable {
     border-bottom: 10px dotted $orange-100;
     padding-bottom: 30px;
@@ -18,8 +33,13 @@
     @include for-tablet-up {
       padding-bottom: 0;
       padding-right: 30px;
+      padding-left: 60px;
       border-bottom: none;
       border-right: 10px dotted $orange-100;
+    }
+
+    &:before {
+      background-image: url("../../../assets/icons/people.svg");
     }
   }
 
@@ -28,30 +48,11 @@
     display: inline-flex;
     font-weight: 600;
     line-height: 36px;
+    margin-top: 0;
     margin-bottom: 15px;
 
     @include for-tablet-up {
       display: inline-block;
-
-      &:before {
-        width: 30px;
-        height: 30px;
-      }
-    }
-
-    &:before {
-      content: "";
-      flex: 0 0 30px;
-      display: inline-block;
-      margin-right: 20px;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-  }
-
-  .course-suitable-title {
-    &:before {
-      background-image: url("../../../assets/icons/people.svg");
     }
   }
 
@@ -60,24 +61,17 @@
     margin-bottom: 0;
   }
 
-  .course-suitable-description {
-  }
-
   .course-skills {
     margin-top: 30px;
+    padding-left: 60px;
 
     @include for-tablet-up {
       margin-top: 0;
       margin-left: 30px;
     }
-  }
 
-  .course-skills-title {
     &:before {
       background-image: url("../../../assets/icons/bell.svg");
     }
-  }
-
-  .course-skills-description {
   }
 }

@@ -3,7 +3,7 @@
 @import "../../02-tools/mixins.scss";
 
 .lectures-and-more-info-container {
-  margin-bottom: 100px;
+  margin-bottom: 172px;
   color: $grey-700;
 
   @include for-tablet-up {
@@ -17,6 +17,29 @@
 
     &:hover {
       border-bottom-color: transparent;
+    }
+  }
+
+  .lectures,
+  .more-info {
+    position: relative;
+    padding-left: 60px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @include for-tablet-up {
+      &:before {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
@@ -37,28 +60,10 @@
     display: inline-flex;
     font-weight: 600;
     line-height: 36px;
-    margin-bottom: 15px;
-
-    @include for-tablet-up {
-      display: inline-block;
-
-      &:before {
-        width: 30px;
-        height: 30px;
-      }
-    }
-
-    &:before {
-      content: "";
-      flex: 0 0 30px;
-      display: inline-block;
-      margin-right: 20px;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+    margin: 0 auto 15px;
   }
 
-  .lectures-title {
+  .lectures {
     &:before {
       background-image: url("../../../assets/icons/clock.svg");
     }
@@ -67,9 +72,6 @@
   .lectures-description,
   .more-info-description {
     margin-bottom: 0;
-  }
-
-  .lectures-description {
   }
 
   .more-info {
@@ -81,12 +83,9 @@
     }
   }
 
-  .more-info-title {
+  .more-info {
     &:before {
       background-image: url("../../../assets/icons/bulb.svg");
     }
-  }
-
-  .more-info-description {
   }
 }
