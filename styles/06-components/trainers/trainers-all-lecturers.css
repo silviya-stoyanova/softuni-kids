@@ -145,6 +145,8 @@
 
 .all-lecturers-container .lecturer-image-container {
   max-width: 190px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .all-lecturers-container .fa-info:before {
