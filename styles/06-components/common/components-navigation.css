@@ -110,12 +110,6 @@
   }
 }
 
-.navigation-wrapper .navigation-list-item.login-btn-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .navigation-wrapper .navigation-list-item a {
   font-size: 13px;
   line-height: 16px;
@@ -144,6 +138,9 @@
 }
 
 .navigation-wrapper .login-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 20px;
 }
 
@@ -151,5 +148,21 @@
   width: 80px;
   height: 35px;
   padding: 10px 22px;
+}
+
+.navigation-wrapper .mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  color: #565656;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation-wrapper .mobile-nav {
+    display: none;
+  }
 }
 /*# sourceMappingURL=components-navigation.css.map */

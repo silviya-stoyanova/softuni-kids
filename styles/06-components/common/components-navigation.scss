@@ -75,10 +75,6 @@
             display: flex;
         }
 
-        &.login-btn-wrapper {
-            display: flex;
-        }
-
         a {
             font-size: 13px;
             line-height: 16px;
@@ -105,6 +101,7 @@
     }
 
     .login-btn-wrapper {
+        display: flex;
         margin-left: 20px;
     }
 
@@ -112,5 +109,17 @@
         width: 80px;
         height: 35px;
         padding: 10px 22px;
+    }
+
+    .mobile-nav {
+        display: flex;
+        font-size: 20px;
+        color: $grey-700;
+        margin-left: 5px;
+        cursor: pointer;
+
+        @include for-desktop-up {
+            display: none;
+        }
     }
 }
