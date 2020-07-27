@@ -101,7 +101,7 @@
 
 @media only screen and (min-width: 768px) {
   .all-lecturers-container .lecturer-link:before, .all-lecturers-container .lecturer-link:after {
-    left: 35px;
+    left: 34px;
     top: 8px;
   }
 }
@@ -170,7 +170,7 @@
 
 @media only screen and (min-width: 768px) {
   .all-lecturers-container .fa-info:before {
-    left: 35px;
+    left: 34px;
     top: 8px;
   }
 }
