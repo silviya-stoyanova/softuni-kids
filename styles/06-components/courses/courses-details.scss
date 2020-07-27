@@ -7,7 +7,7 @@
   grid-template-rows: 1fr 250px;
   gap: 30px;
   margin: 150px auto 65px;
-  
+
   @include for-desktop-up {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 440px;
@@ -23,11 +23,24 @@
   }
 
   .course-details-video-container {
+    position: relative;
     justify-self: center;
     max-width: 440px;
     height: 250px;
     border-radius: 12px;
     overflow: hidden;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 64px;
+      height: 64px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: url("../../../assets/icons/play-button.svg");
+    }
   }
 
   .course-details-video-cover-image {

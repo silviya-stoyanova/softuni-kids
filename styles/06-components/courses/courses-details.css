@@ -34,12 +34,26 @@
 }
 
 .course-details-container .course-details-video-container {
+  position: relative;
   -ms-grid-column-align: center;
       justify-self: center;
   max-width: 440px;
   height: 250px;
   border-radius: 12px;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.course-details-container .course-details-video-container:before {
+  content: "";
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: url("../../../assets/icons/play-button.svg");
 }
 
 .course-details-container .course-details-video-cover-image {
