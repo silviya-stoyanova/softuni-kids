@@ -189,6 +189,29 @@
   font-size: 27px;
 }
 
+.footer .social-media-list-mobile {
+  display: -ms-grid;
+  display: grid;
+  padding-top: 32px;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer .social-media-list-mobile {
+    display: none;
+  }
+}
+
+.footer .social-media-list-desktop {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer .social-media-list-desktop {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
 .footer .all-rights-reserved {
   position: absolute;
   bottom: 0;

@@ -157,6 +157,23 @@
     }
   }
 
+  .social-media-list-mobile {
+    display: grid;
+    padding-top: 32px;
+
+    @include for-desktop-up {
+      display: none;
+    }
+  }
+
+  .social-media-list-desktop {
+    display: none;
+
+    @include for-desktop-up {
+      display: grid;
+    }
+  }
+
   .all-rights-reserved {
     position: absolute;
     bottom: 0;
