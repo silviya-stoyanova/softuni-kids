@@ -32,29 +32,23 @@
 }
 
 .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(1) {
-  display: -ms-grid;
-  display: grid;
+  display: block;
 }
 
 .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(2) {
-  display: -ms-grid;
-  display: grid;
+  display: block;
 }
 
 .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(3) {
-  display: -ms-grid;
-  display: grid;
+  display: block;
 }
 
 .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(4) {
-  display: -ms-grid;
-  display: grid;
+  display: block;
 }
 
 @media only screen and (min-width: 768px) {
   .all-lecturers-container .all-lecturers-list {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-rows: (265px)[3];
         grid-template-rows: repeat(3, 265px);
     -ms-grid-columns: (240px)[3];
@@ -74,6 +68,12 @@
 
 .all-lecturers-container .all-lecturers-list-item {
   display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list-item {
+    display: block;
+  }
 }
 
 .all-lecturers-container .lecturer-link {

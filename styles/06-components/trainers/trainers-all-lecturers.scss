@@ -17,12 +17,11 @@
 
     @for $i from 1 through 4 {
       .all-lecturers-list-item:nth-child(#{$i}) {
-        display: grid;
+        display: block;
       }
     }
 
     @include for-tablet-up {
-      display: grid;
       grid-template-rows: repeat(3, 265px);
       grid-template-columns: repeat(3, 240px);
       gap: 65px 30px;
@@ -36,6 +35,10 @@
 
   .all-lecturers-list-item {
     display: none;
+
+    @include for-tablet-up {
+      display: block;
+    }
   }
 
   .lecturer-link {
