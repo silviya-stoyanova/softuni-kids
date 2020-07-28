@@ -1,7 +1,7 @@
 # The final project of the course **CSS Advanced @ SoftUni**
 
 
-*Long story short:*
+## *Long story short:*
 
 
 The task is to implement a website using a given design **only** with *HTML* and *SASS*. There are 3 pages which are linked together so you can access each of them easily.
@@ -9,7 +9,6 @@ The task is to implement a website using a given design **only** with *HTML* and
 At `/courses` page there is a cover image with a play button which I made **play** on click using *JavaScript*.
 
 ____
------
 
 ## Requirements:
 
