@@ -9,6 +9,13 @@
 /* Shadow 12dp */
 /* Shadow 16dp */
 /* Shadow 24dp */
+.course-details-container .course-details-video-container:before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .course-details-container {
   display: -ms-grid;
   display: grid;
@@ -49,10 +56,6 @@
   position: absolute;
   width: 64px;
   height: 64px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background: url("../../../assets/icons/play-button.svg");
 }
 

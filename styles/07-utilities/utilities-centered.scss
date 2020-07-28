@@ -1,8 +1,15 @@
-.centered {
-    text-align: center;
+%center-content-horizontal {
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.centered__container {
-    width: 65%;
-    margin: 0 auto;
+%center-content-vertical {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+%center-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

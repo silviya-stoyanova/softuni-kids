@@ -1,6 +1,7 @@
 @import "../../01-settings/settings-colors.scss";
 @import "../../01-settings/settings-box-shadows.scss";
 @import "../../02-tools/mixins.scss";
+@import "../../07-utilities/utilities-centered.scss";
 
 .course-details-container {
   display: grid;
@@ -32,13 +33,11 @@
     cursor: pointer;
 
     &:before {
+      @extend %center-content;
       content: "";
       position: absolute;
       width: 64px;
       height: 64px;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       background: url("../../../assets/icons/play-button.svg");
     }
   }

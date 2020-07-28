@@ -2,6 +2,7 @@
 @import "../../01-settings/settings-box-shadows.scss";
 @import "../../02-tools/mixins.scss";
 @import "../../04-elements/elements-pseudo-elements.scss";
+@import "../../07-utilities/utilities-centered.scss";
 
 .educational-program-container {
   min-height: 560px;
@@ -96,10 +97,9 @@
   }
 
   .fa-chevron-down {
+    @extend %center-content-vertical;
     position: absolute;
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
     color: $grey-500;
   }
 

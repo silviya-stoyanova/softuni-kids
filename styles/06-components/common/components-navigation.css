@@ -9,6 +9,12 @@
 /* Shadow 12dp */
 /* Shadow 16dp */
 /* Shadow 24dp */
+.navigation-wrapper .navigation-logo .fa-caret-right {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 .navigation-wrapper {
   position: -webkit-sticky;
   position: sticky;
@@ -74,9 +80,6 @@
 .navigation-wrapper .navigation-logo .fa-caret-right {
   position: absolute;
   left: -25px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   font-size: 30px;
   color: #565656;
   cursor: pointer;
