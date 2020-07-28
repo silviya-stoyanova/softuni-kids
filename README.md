@@ -6,7 +6,7 @@
 
 This is a website implemented **only** with *HTML* and *SASS* using a given design. There are 3 pages which are linked together so you can access each of them easily.
 
-At `/courses` page there is a video with cover image and a play button which I made **play** on click using *JavaScript*.
+At `/courses` page there is a video with cover image and a custom play button which I made **play** on click using *JavaScript*.
 
 ____
 
