@@ -1,0 +1,13 @@
+body::-webkit-scrollbar {
+  width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px #B2B2B2;
+          box-shadow: inset 0 0 6px #B2B2B2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #44A9F8;
+}
+/*# sourceMappingURL=generic-scrollbar.css.map */
