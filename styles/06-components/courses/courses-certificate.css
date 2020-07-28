@@ -9,6 +9,14 @@
 /* Shadow 12dp */
 /* Shadow 16dp */
 /* Shadow 24dp */
+.certificate-container .certificate-text-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
 .certificate-container {
   display: none;
   margin-bottom: 105px;
@@ -39,11 +47,6 @@
 }
 
 .certificate-container .certificate-text-container:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 30px;
   background: url("../../../assets/icons/certificate.svg");
   background-size: contain;
 }

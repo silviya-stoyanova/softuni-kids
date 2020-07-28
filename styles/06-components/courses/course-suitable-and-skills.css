@@ -9,6 +9,15 @@
 /* Shadow 12dp */
 /* Shadow 16dp */
 /* Shadow 24dp */
+.course-suitable-and-skills-container .course-suitable:before,
+.course-suitable-and-skills-container .course-skills:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
 .course-suitable-and-skills-container {
   margin-bottom: 65px;
   color: #565656;
@@ -30,11 +39,6 @@
 
 .course-suitable-and-skills-container .course-suitable:before,
 .course-suitable-and-skills-container .course-skills:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
 }

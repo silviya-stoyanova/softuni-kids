@@ -9,6 +9,15 @@
 /* Shadow 12dp */
 /* Shadow 16dp */
 /* Shadow 24dp */
+.lectures-and-more-info-container .lectures:before,
+.lectures-and-more-info-container .more-info:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
 .lectures-and-more-info-container {
   margin-bottom: 172px;
   color: #565656;
@@ -41,11 +50,6 @@
 
 .lectures-and-more-info-container .lectures:before,
 .lectures-and-more-info-container .more-info:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 30px;
   background-size: contain;
   background-repeat: no-repeat;
 }

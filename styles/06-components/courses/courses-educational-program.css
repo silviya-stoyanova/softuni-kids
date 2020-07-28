@@ -9,6 +9,14 @@
 /* Shadow 12dp */
 /* Shadow 16dp */
 /* Shadow 24dp */
+.educational-program-container .educational-program-text-container:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 30px;
+  height: 30px;
+}
+
 .educational-program-container {
   min-height: 560px;
   padding: 65px 0;
@@ -52,11 +60,6 @@
 }
 
 .educational-program-container .educational-program-text-container:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 30px;
-  height: 30px;
   background: 0 3px/contain no-repeat url("../../../assets/icons/book.svg");
 }
 
