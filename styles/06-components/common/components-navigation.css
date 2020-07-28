@@ -154,8 +154,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 20px;
-  color: #565656;
   margin-left: 5px;
   cursor: pointer;
 }
