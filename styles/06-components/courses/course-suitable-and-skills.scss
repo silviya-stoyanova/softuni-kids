@@ -28,12 +28,12 @@
 
   .course-suitable {
     border-bottom: 10px dotted $orange-100;
+    padding-left: 60px;
     padding-bottom: 30px;
 
     @include for-tablet-up {
       padding-bottom: 0;
       padding-right: 30px;
-      padding-left: 60px;
       border-bottom: none;
       border-right: 10px dotted $orange-100;
     }

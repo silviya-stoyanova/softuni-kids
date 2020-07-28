@@ -41,6 +41,7 @@
 
 .course-suitable-and-skills-container .course-suitable {
   border-bottom: 10px dotted #FFECB3;
+  padding-left: 60px;
   padding-bottom: 30px;
 }
 
@@ -48,7 +49,6 @@
   .course-suitable-and-skills-container .course-suitable {
     padding-bottom: 0;
     padding-right: 30px;
-    padding-left: 60px;
     border-bottom: none;
     border-right: 10px dotted #FFECB3;
   }
