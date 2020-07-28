@@ -1,11 +1,15 @@
 @font-face {
   font-family: "Lato-Regular";
-  src: url("../../assets/fonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff2") format("woff2"), url("../../assets/fonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff") format("woff"), url("../../assets/fonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.ttf") format("truetype");
+  src: url("../../assets/fonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.woff") format("woff"),
+    url("../../assets/fonts/Lato2OFLWeb/Lato/fonts/Lato-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../../assets/fonts/Montserrat/Montserrat-Regular/montserrat-400-normal.woff2") format("woff2"), url("../../assets/fonts/Montserrat/Montserrat-Regular/montserrat-400-normal.woff") format("woff"), url("../../assets/fonts/Montserrat/Montserrat-Regular/montserrat-400-normal.ttf") format("truetype");
+  src: url("../../assets/fonts/Montserrat/Montserrat-Regular/montserrat-400-normal.woff2") format("woff2"),
+    url("../../assets/fonts/Montserrat/Montserrat-Regular/montserrat-400-normal.woff") format("woff"),
+    url("../../assets/fonts/Montserrat/Montserrat-Regular/montserrat-400-normal.ttf") format("truetype");
 }
 
 html,
@@ -65,4 +69,4 @@ h4 {
   font-size: 20px;
   line-height: 24px;
 }
-/*# sourceMappingURL=settings-typography.css.map */
+/*# sourceMappingURL=elements-typography.css.map */
