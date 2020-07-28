@@ -50,9 +50,7 @@
 
 @media only screen and (min-width: 768px) {
   .course-suitable-and-skills-container .course-suitable {
-    padding-left: 60px;
-    padding-bottom: 0;
-    padding-right: 30px;
+    padding: 0 30px 0 60px;
     border-bottom: none;
     border-right: 10px dotted #FFECB3;
   }
@@ -94,8 +92,7 @@
 @media only screen and (min-width: 768px) {
   .course-suitable-and-skills-container .course-skills {
     padding-left: 60px;
-    margin-top: 0;
-    margin-left: 30px;
+    margin: 0 0 0 30px;
   }
 }
 
