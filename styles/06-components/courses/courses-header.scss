@@ -97,16 +97,22 @@ $course-intro-dots: 30;
     margin-right: -10px;
     overflow: hidden;
 
-    @include for-large-desktop-up {
-      display: flex;
-      flex-direction: column;
-      justify-content: initial;
-      max-height: unset;
-      margin: 0;
-      position: absolute;
-      left: 285px;
+    @for $i from 1 through $course-intro-dots {
+      .course-intro-dot:nth-child(#{$i}) {
+        display: inline-block;
+      }
 
-      @for $i from 1 through $course-intro-dots {
+      @if $i > 18 {
+        .course-intro-dot:nth-child(#{$i}) {
+          display: none;
+
+          @include for-tablet-up {
+            display: inline-block;
+          }
+        }
+      }
+
+      @include for-large-desktop-up {
         @if $i < 4 {
           .course-intro-dot:nth-child(#{$i}) {
             background: $blue-400;
@@ -138,6 +144,16 @@ $course-intro-dots: 30;
           }
         }
       }
+    }
+
+    @include for-large-desktop-up {
+      display: flex;
+      flex-direction: column;
+      justify-content: initial;
+      max-height: unset;
+      margin: 0;
+      position: absolute;
+      left: 285px;
     }
 
     .course-intro-dot {
