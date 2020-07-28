@@ -24,6 +24,7 @@ ____
 - the use of client-side frameworks is **forbidden** (React, Angular, Vue etc.)
 - the content should be in HTML files, not in a database or in the cloud
 
+## About the design
 This project consists of 3 pages:
  1. Courses
  2. Trainers 
