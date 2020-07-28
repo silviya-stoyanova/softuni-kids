@@ -19,7 +19,7 @@
 }
 
 .lectures-and-more-info-container {
-  margin-bottom: 172px;
+  margin-bottom: 96px;
   color: #565656;
 }
 
@@ -29,6 +29,7 @@
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 172px;
   }
 }
 
@@ -86,7 +87,7 @@
   display: inline-flex;
   font-weight: 600;
   line-height: 36px;
-  margin: 0 auto 15px;
+  margin: 0;
   padding-left: 60px;
 }
 

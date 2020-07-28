@@ -4,12 +4,13 @@
 @import "../../04-elements/elements-pseudo-elements.scss";
 
 .lectures-and-more-info-container {
-  margin-bottom: 172px;
+  margin-bottom: 96px;
   color: $grey-700;
 
   @include for-tablet-up {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 172px;
   }
 
   a {
@@ -58,7 +59,7 @@
     display: inline-flex;
     font-weight: 600;
     line-height: 36px;
-    margin: 0 auto 15px;
+    margin: 0;
     padding-left: 60px;
 
     @include for-tablet-up {
