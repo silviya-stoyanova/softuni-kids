@@ -1,0 +1,9 @@
+*::-moz-selection {
+  color: #181818;
+  background: #7CD1C5;
+}
+*::selection {
+  color: #181818;
+  background: #7CD1C5;
+}
+/*# sourceMappingURL=generic-text-selection.css.map */

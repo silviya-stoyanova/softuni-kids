@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,AAAA,WAAW,CAAC;EACX,KAAK,ECkCI,OAAO;EDjChB,UAAU,ECEA,OAAO;CDDlB",
+    "sources": [
+        "generic-text-selection.scss",
+        "../01-settings/settings-colors.scss"
+    ],
+    "names": [],
+    "file": "generic-text-selection.css"
+}

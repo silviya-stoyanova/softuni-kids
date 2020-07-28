@@ -1,0 +1,6 @@
+@import "../01-settings/settings-colors.scss";
+
+*::selection {
+  color: $grey-900;
+  background: $green-200;
+}
