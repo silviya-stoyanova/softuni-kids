@@ -19,7 +19,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 50px) 190px 50px;
-    gap: 30px;
+    gap: 32px;
 
     @include for-tablet-up {
       grid-template-columns: repeat(2, 1fr);

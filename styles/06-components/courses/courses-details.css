@@ -21,8 +21,8 @@
   display: grid;
   -ms-grid-rows: 1fr 250px;
       grid-template-rows: 1fr 250px;
-  gap: 30px;
-  margin: 150px auto 65px;
+  gap: 32px;
+  margin: 150px auto 64px;
 }
 
 @media only screen and (min-width: 992px) {

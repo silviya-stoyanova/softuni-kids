@@ -11,7 +11,7 @@
 /* Shadow 16dp */
 /* Shadow 24dp */
 .all-lecturers-container {
-  margin: 65px auto 100px;
+  margin: 64px auto 100px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -53,7 +53,7 @@
         grid-template-rows: repeat(3, 265px);
     -ms-grid-columns: (240px)[3];
         grid-template-columns: repeat(3, 240px);
-    gap: 65px 30px;
+    gap: 64px 32px;
   }
 }
 
@@ -161,7 +161,7 @@
   top: 8px;
   width: 172px;
   height: 172px;
-  font-size: 65px;
+  font-size: 64px;
   padding-top: 40px;
   color: transparent;
   -webkit-transition: 0.3s color ease-in;

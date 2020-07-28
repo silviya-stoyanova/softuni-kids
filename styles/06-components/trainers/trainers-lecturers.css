@@ -14,7 +14,7 @@
   display: grid;
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  gap: 65px;
+  gap: 64px;
   margin: 50px auto 0;
   padding-bottom: 64px;
   border-bottom: 10px dotted #DFF4F1;
@@ -28,7 +28,7 @@
         grid-template-rows: 1fr;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 32px;
   }
 }
 
@@ -38,7 +38,7 @@
   -ms-grid-rows: 190px 1fr;
       grid-template-rows: 190px 1fr;
   justify-items: center;
-  gap: 30px;
+  gap: 32px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -47,7 +47,6 @@
         grid-template-rows: 1fr;
     -ms-grid-columns: 190px 1fr;
         grid-template-columns: 190px 1fr;
-    gap: 30px;
   }
 }
 

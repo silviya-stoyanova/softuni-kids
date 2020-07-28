@@ -22,7 +22,7 @@
   -ms-grid-rows: 0.5fr 2fr;
       grid-template-rows: 0.5fr 2fr;
   gap: 50px;
-  padding: 65px 20px;
+  padding: 64px 20px;
   margin: 0 auto;
 }
 
@@ -34,7 +34,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    padding: 65px 20px 130px;
+    padding: 64px 20px 130px;
   }
 }
 
@@ -62,7 +62,7 @@
       grid-template-rows: repeat(3, 50px) 1fr;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 32px;
 }
 
 @media only screen and (min-width: 992px) {

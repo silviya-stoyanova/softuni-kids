@@ -3,7 +3,7 @@
 @import "../../02-tools/mixins.scss";
 
 .all-lecturers-container {
-  margin: 65px auto 100px;
+  margin: 64px auto 100px;
 
   @include for-tablet-up {
     margin: 100px auto 130px;
@@ -24,7 +24,7 @@
     @include for-tablet-up {
       grid-template-rows: repeat(3, 265px);
       grid-template-columns: repeat(3, 240px);
-      gap: 65px 30px;
+      gap: 64px 32px;
     }
 
     @include for-desktop-up {
@@ -113,7 +113,7 @@
     top: 8px;
     width: 172px;
     height: 172px;
-    font-size: 65px;
+    font-size: 64px;
     padding-top: 40px;
     color: transparent;
     transition: 0.3s color ease-in;

@@ -19,7 +19,7 @@
 }
 
 .course-suitable-and-skills-container {
-  margin-bottom: 65px;
+  margin-bottom: 64px;
   color: #565656;
 }
 
@@ -45,12 +45,12 @@
 
 .course-suitable-and-skills-container .course-suitable {
   border-bottom: 10px dotted #FFECB3;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
   .course-suitable-and-skills-container .course-suitable {
-    padding: 0 30px 0 60px;
+    padding: 0 32px 0 60px;
     border-bottom: none;
     border-right: 10px dotted #FFECB3;
   }
@@ -86,13 +86,13 @@
 }
 
 .course-suitable-and-skills-container .course-skills {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 @media only screen and (min-width: 768px) {
   .course-suitable-and-skills-container .course-skills {
     padding-left: 60px;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 32px;
   }
 }
 

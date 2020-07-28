@@ -30,7 +30,7 @@
       grid-template-columns: 1fr;
   -ms-grid-rows: (50px)[2] 190px 50px;
       grid-template-rows: repeat(2, 50px) 190px 50px;
-  gap: 30px;
+  gap: 32px;
 }
 
 @media only screen and (min-width: 768px) {

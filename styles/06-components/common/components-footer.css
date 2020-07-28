@@ -182,7 +182,7 @@
       grid-template-columns: repeat(2, 29px);
   -ms-grid-rows: 28px;
       grid-template-rows: 28px;
-  gap: 30px;
+  gap: 32px;
   padding-top: 10px;
 }
 
@@ -220,8 +220,8 @@
   left: 0;
   right: 0;
   text-align: center;
-  padding-top: 30px;
-  margin: 30px auto;
+  padding-top: 32px;
+  margin: 32px auto;
   border-top: 1px solid #696969;
   line-height: 19px;
   color: #919191;

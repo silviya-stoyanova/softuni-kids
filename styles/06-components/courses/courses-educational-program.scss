@@ -6,13 +6,13 @@
 
 .educational-program-container {
   min-height: 560px;
-  padding: 65px 0;
+  padding: 64px 0;
   margin-bottom: 64px;
   background: no-repeat url("../../../assets/images/educational-program-background.svg");
   background-size: cover;
 
   @include for-desktop-up {
-    padding: 65px 0 60px;
+    padding: 64px 0 60px;
   }
 
   @include for-very-large-desktop-up {
@@ -55,10 +55,10 @@
   }
 
   .educational-program-text-description {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 
     @include for-desktop-up {
-      margin-bottom: 25px;
+      margin-bottom: 24px;
     }
   }
 

@@ -61,20 +61,20 @@
   }
   .lectures-and-more-info-container .lectures:before,
   .lectures-and-more-info-container .more-info:before {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
   }
 }
 
 .lectures-and-more-info-container .lectures {
   border-bottom: 10px dotted #FFECB3;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
   .lectures-and-more-info-container .lectures {
     padding-bottom: 0;
-    padding-right: 30px;
+    padding-right: 32px;
     border-bottom: none;
     border-right: 10px dotted #FFECB3;
   }
@@ -108,13 +108,12 @@
 }
 
 .lectures-and-more-info-container .more-info {
-  margin-top: 30px;
+  margin-top: 32px;
 }
 
 @media only screen and (min-width: 768px) {
   .lectures-and-more-info-container .more-info {
-    margin-top: 0;
-    margin-left: 30px;
+    margin: 0 0 0 32px;
   }
 }
 

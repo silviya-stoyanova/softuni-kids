@@ -4,7 +4,7 @@
 @import "../../04-elements/elements-pseudo-elements.scss";
 
 .course-suitable-and-skills-container {
-  margin-bottom: 65px;
+  margin-bottom: 64px;
   color: $grey-700;
 
   @include for-tablet-up {
@@ -25,10 +25,10 @@
 
   .course-suitable {
     border-bottom: 10px dotted $orange-100;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
 
     @include for-tablet-up {
-      padding: 0 30px 0 60px;
+      padding: 0 32px 0 60px;
       border-bottom: none;
       border-right: 10px dotted $orange-100;
     }
@@ -59,11 +59,11 @@
   }
 
   .course-skills {
-    margin-top: 30px;
+    margin-top: 32px;
 
     @include for-tablet-up {
       padding-left: 60px;
-      margin: 0 0 0 30px;
+      margin: 0 0 0 32px;
     }
 
     &:before {

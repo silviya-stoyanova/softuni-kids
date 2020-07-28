@@ -36,19 +36,19 @@
       padding-left: 60px;
 
       &:before {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
       }
     }
   }
 
   .lectures {
     border-bottom: 10px dotted $orange-100;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
 
     @include for-tablet-up {
       padding-bottom: 0;
-      padding-right: 30px;
+      padding-right: 32px;
       border-bottom: none;
       border-right: 10px dotted $orange-100;
     }
@@ -79,11 +79,10 @@
   }
 
   .more-info {
-    margin-top: 30px;
+    margin-top: 32px;
 
     @include for-tablet-up {
-      margin-top: 0;
-      margin-left: 30px;
+      margin: 0 0 0 32px;
     }
   }
 
