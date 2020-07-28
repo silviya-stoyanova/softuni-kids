@@ -2,14 +2,12 @@ const videoIDs = [
   'IyjRgJ7L5vc'
 ];
 
-// Load IFrame Player API code asynchronously.
 const iframeApi = document.createElement('script');
 iframeApi.id = 'iframe-api';
 iframeApi.src = 'https://www.youtube.com/iframe_api';
 const firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(iframeApi, firstScriptTag);
 
-// Create an <iframe> after the API code downloads.
 function onYouTubeIframeAPIReady() {
   videoIDs.map(videoId => {
     const player = new YT.Player(`${videoId}`, { // replaces the element with this ID
