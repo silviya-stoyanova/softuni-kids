@@ -45,7 +45,6 @@
 .lectures-and-more-info-container .lectures,
 .lectures-and-more-info-container .more-info {
   position: relative;
-  padding-left: 60px;
 }
 
 .lectures-and-more-info-container .lectures:before,
@@ -55,6 +54,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .lectures-and-more-info-container .lectures,
+  .lectures-and-more-info-container .more-info {
+    padding-left: 60px;
+  }
   .lectures-and-more-info-container .lectures:before,
   .lectures-and-more-info-container .more-info:before {
     width: 30px;
@@ -84,6 +87,14 @@
   font-weight: 600;
   line-height: 36px;
   margin: 0 auto 15px;
+  padding-left: 60px;
+}
+
+@media only screen and (min-width: 768px) {
+  .lectures-and-more-info-container .lectures-title,
+  .lectures-and-more-info-container .more-info-title {
+    padding-left: 0px;
+  }
 }
 
 .lectures-and-more-info-container .lectures:before {

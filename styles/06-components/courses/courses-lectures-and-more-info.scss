@@ -24,7 +24,6 @@
   .lectures,
   .more-info {
     position: relative;
-    padding-left: 60px;
 
     &:before {
       @extend %icon-before-section;
@@ -33,6 +32,8 @@
     }
 
     @include for-tablet-up {
+      padding-left: 60px;
+
       &:before {
         width: 30px;
         height: 30px;
@@ -58,6 +59,11 @@
     font-weight: 600;
     line-height: 36px;
     margin: 0 auto 15px;
+    padding-left: 60px;
+
+    @include for-tablet-up {
+      padding-left: 0px;
+    }
   }
 
   .lectures {

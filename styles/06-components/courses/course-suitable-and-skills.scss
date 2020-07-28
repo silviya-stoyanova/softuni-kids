@@ -25,10 +25,10 @@
 
   .course-suitable {
     border-bottom: 10px dotted $orange-100;
-    padding-left: 60px;
     padding-bottom: 30px;
 
     @include for-tablet-up {
+      padding-left: 60px;
       padding-bottom: 0;
       padding-right: 30px;
       border-bottom: none;
@@ -47,9 +47,11 @@
     line-height: 36px;
     margin-top: 0;
     margin-bottom: 15px;
+    padding-left: 60px;
 
     @include for-tablet-up {
       display: inline-block;
+      padding-left: 0px;
     }
   }
 
@@ -60,9 +62,9 @@
 
   .course-skills {
     margin-top: 30px;
-    padding-left: 60px;
 
     @include for-tablet-up {
+      padding-left: 60px;
       margin-top: 0;
       margin-left: 30px;
     }
