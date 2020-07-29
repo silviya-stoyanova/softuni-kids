@@ -82,7 +82,7 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 32px 23px;
-  padding: 50px 0;
+  padding: 52px 0;
 }
 
 @media only screen and (min-width: 992px) {
