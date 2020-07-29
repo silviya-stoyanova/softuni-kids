@@ -48,7 +48,7 @@
   -ms-grid-column-align: center;
       justify-self: center;
   max-width: 440px;
-  height: 250px;
+  max-height: 250px;
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
