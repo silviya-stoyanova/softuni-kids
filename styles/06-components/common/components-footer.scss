@@ -55,7 +55,7 @@
 
   .footer-list {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
     grid-template-columns: 1fr 1fr;
     gap: 32px 23px;
     padding: 50px 0;
@@ -64,7 +64,7 @@
       grid-template-columns: minmax(255px, 1fr) minmax(145px, 1fr) minmax(140px, 1fr) minmax(180px, 1fr);
       grid-template-rows: 1fr;
       gap: 80px;
-      padding: 45px 0;
+      padding: 64px 0;
     }
   }
 
@@ -133,7 +133,9 @@
   }
 
   .footer-inner-list-item {
-    padding-bottom: 10px;
+    &:not(:last-child) {
+      padding-bottom: 10px;
+    }
 
     a {
       font-size: 16px;
