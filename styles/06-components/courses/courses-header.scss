@@ -32,13 +32,21 @@ $course-intro-dots: 30;
     background: $orange-500;
     border-radius: 4px;
     box-shadow: $shadow-1;
+
+    @include for-large-desktop-up {
+      margin-top: 64px;
+    }
   }
 
   .header-title {
     width: 90%;
 
+    @include for-phone-up {
+      max-width: 640px;
+    }
+
     @include for-large-desktop-up {
-      width: 39%;
+      margin-bottom: -15px;
     }
   }
 

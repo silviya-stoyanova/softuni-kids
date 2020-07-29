@@ -53,13 +53,25 @@
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media only screen and (min-width: 1200px) {
+  .course-header .course-level {
+    margin-top: 64px;
+  }
+}
+
 .course-header .header-title {
   width: 90%;
 }
 
+@media only screen and (min-width: 576px) {
+  .course-header .header-title {
+    max-width: 640px;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .course-header .header-title {
-    width: 39%;
+    margin-bottom: -15px;
   }
 }
 
