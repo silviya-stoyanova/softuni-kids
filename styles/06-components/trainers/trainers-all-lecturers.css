@@ -31,20 +31,124 @@
   gap: 50px;
 }
 
-.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(1) {
-  display: block;
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(5) {
+  display: none;
 }
 
-.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(2) {
-  display: block;
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(5) {
+    display: block;
+  }
 }
 
-.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(3) {
-  display: block;
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(6) {
+  display: none;
 }
 
-.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(4) {
-  display: block;
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(6) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(7) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(7) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(8) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(8) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(9) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(9) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(10) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(10) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(11) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(11) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(12) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(12) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(13) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(13) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(14) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(14) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(15) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(15) {
+    display: block;
+  }
+}
+
+.all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(16) {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(16) {
+    display: block;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -63,16 +167,6 @@
         grid-template-rows: repeat(4, 265px);
     -ms-grid-columns: (240px)[4];
         grid-template-columns: repeat(4, 240px);
-  }
-}
-
-.all-lecturers-container .all-lecturers-list-item {
-  display: none;
-}
-
-@media only screen and (min-width: 768px) {
-  .all-lecturers-container .all-lecturers-list-item {
-    display: block;
   }
 }
 

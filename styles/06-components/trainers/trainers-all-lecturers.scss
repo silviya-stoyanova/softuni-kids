@@ -1,6 +1,13 @@
 @import "../../01-settings/settings-colors.scss";
 @import "../../01-settings/settings-box-shadows.scss";
 @import "../../02-tools/mixins.scss";
+@import "../../02-tools/tools-functions.scss";
+
+$startElement: 1;
+$middleElement: 4;
+$finalElement: 16;
+$selector: ".all-lecturers-list-item";
+$breakpoint: "for-tablet-up";
 
 .all-lecturers-container {
   margin: 64px auto 100px;
@@ -15,11 +22,7 @@
     justify-content: center;
     gap: 50px;
 
-    @for $i from 1 through 4 {
-      .all-lecturers-list-item:nth-child(#{$i}) {
-        display: block;
-      }
-    }
+    @include toggleElementsResponsive($startElement, $middleElement, $finalElement, $selector, $breakpoint);
 
     @include for-tablet-up {
       grid-template-rows: repeat(3, 265px);
@@ -30,14 +33,6 @@
     @include for-desktop-up {
       grid-template-rows: repeat(4, 265px);
       grid-template-columns: repeat(4, 240px);
-    }
-  }
-
-  .all-lecturers-list-item {
-    display: none;
-
-    @include for-tablet-up {
-      display: block;
     }
   }
 
