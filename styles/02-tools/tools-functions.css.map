@@ -3,6 +3,7 @@
     "mappings": "",
     "sources": [
         "tools-functions.scss",
+        "../01-settings/settings-colors.scss",
         "mixins.scss",
         "../01-settings/settings-breakpoints.scss"
     ],

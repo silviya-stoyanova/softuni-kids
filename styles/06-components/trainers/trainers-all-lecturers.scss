@@ -7,7 +7,6 @@ $startElement: 1;
 $middleElement: 4;
 $finalElement: 16;
 $selector: ".all-lecturers-list-item";
-$breakpoint: "for-tablet-up";
 
 .all-lecturers-container {
   margin: 64px auto 100px;
@@ -22,7 +21,7 @@ $breakpoint: "for-tablet-up";
     justify-content: center;
     gap: 50px;
 
-    @include toggleElementsResponsive($startElement, $middleElement, $finalElement, $selector, $breakpoint);
+    @include toggleElementsForTabletUp($startElement, $middleElement, $finalElement, $selector);
 
     @include for-phone-up {
       grid-template-rows: repeat(8, 265px);

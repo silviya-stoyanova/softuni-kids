@@ -1,12 +1,12 @@
 @import "../02-tools/mixins.scss";
 
-@mixin toggleElementsResponsive($startElement, $middleElement, $finalElement, $selector, $breakpoint) {
+@mixin toggleElementsForTabletUp($startElement, $middleElement, $finalElement, $selector) {
   @for $i from $startElement through $finalElement {
     @if $i > $middleElement {
       #{$selector}:nth-child(#{$i}) {
         display: none;
 
-        @include #{$breakpoint} {
+        @include for-phone-up {
           display: block;
         }
       }
