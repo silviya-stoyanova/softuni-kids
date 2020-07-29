@@ -1,6 +1,7 @@
 @import "../01-settings/settings-colors.scss";
 
 html {
+  // supports Firefox
   scrollbar-color: $blue-700 $grey-200;
 }
 
