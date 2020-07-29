@@ -21,6 +21,9 @@
   display: grid;
   -ms-grid-rows: 1fr 250px;
       grid-template-rows: 1fr 250px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 32px;
   margin: 150px auto 64px;
 }
