@@ -35,7 +35,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(5) {
     display: block;
   }
@@ -45,7 +45,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(6) {
     display: block;
   }
@@ -55,7 +55,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(7) {
     display: block;
   }
@@ -65,7 +65,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(8) {
     display: block;
   }
@@ -75,7 +75,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(9) {
     display: block;
   }
@@ -85,7 +85,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(10) {
     display: block;
   }
@@ -95,7 +95,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(11) {
     display: block;
   }
@@ -105,7 +105,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(12) {
     display: block;
   }
@@ -115,7 +115,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(13) {
     display: block;
   }
@@ -125,7 +125,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(14) {
     display: block;
   }
@@ -135,7 +135,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(15) {
     display: block;
   }
@@ -145,23 +145,32 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list .all-lecturers-list-item:nth-child(16) {
     display: block;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .all-lecturers-list {
-    -ms-grid-rows: (265px)[3];
-        grid-template-rows: repeat(3, 265px);
-    -ms-grid-columns: (240px)[3];
-        grid-template-columns: repeat(3, 240px);
+    -ms-grid-rows: (265px)[8];
+        grid-template-rows: repeat(8, 265px);
+    -ms-grid-columns: (240px)[2];
+        grid-template-columns: repeat(2, 240px);
     gap: 64px 32px;
   }
 }
 
 @media only screen and (min-width: 992px) {
+  .all-lecturers-container .all-lecturers-list {
+    -ms-grid-rows: (265px)[6];
+        grid-template-rows: repeat(6, 265px);
+    -ms-grid-columns: (240px)[3];
+        grid-template-columns: repeat(3, 240px);
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .all-lecturers-container .all-lecturers-list {
     -ms-grid-rows: (265px)[4];
         grid-template-rows: repeat(4, 265px);
@@ -193,7 +202,7 @@
   height: 172px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .lecturer-link:before, .all-lecturers-container .lecturer-link:after {
     left: 34px;
     top: 8px;
@@ -262,7 +271,7 @@
   transition: 0.3s color ease-in;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
   .all-lecturers-container .fa-info:before {
     left: 34px;
     top: 8px;

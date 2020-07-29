@@ -24,13 +24,18 @@ $breakpoint: "for-tablet-up";
 
     @include toggleElementsResponsive($startElement, $middleElement, $finalElement, $selector, $breakpoint);
 
-    @include for-tablet-up {
-      grid-template-rows: repeat(3, 265px);
-      grid-template-columns: repeat(3, 240px);
+    @include for-phone-up {
+      grid-template-rows: repeat(8, 265px);
+      grid-template-columns: repeat(2, 240px);
       gap: 64px 32px;
     }
 
     @include for-desktop-up {
+      grid-template-rows: repeat(6, 265px);
+      grid-template-columns: repeat(3, 240px);
+    }
+
+    @include for-large-desktop-up {
       grid-template-rows: repeat(4, 265px);
       grid-template-columns: repeat(4, 240px);
     }
@@ -53,7 +58,7 @@ $breakpoint: "for-tablet-up";
       width: 172px;
       height: 172px;
 
-      @include for-tablet-up {
+      @include for-phone-up {
         left: 34px;
         top: 8px;
       }
@@ -113,7 +118,7 @@ $breakpoint: "for-tablet-up";
     color: transparent;
     transition: 0.3s color ease-in;
 
-    @include for-tablet-up {
+    @include for-phone-up {
       left: 34px;
       top: 8px;
     }
