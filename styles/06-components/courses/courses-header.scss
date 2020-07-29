@@ -41,8 +41,6 @@ $selector: ".course-intro-dot";
   }
 
   .header-title {
-    width: 90%;
-
     @include for-phone-up {
       max-width: 640px;
     }

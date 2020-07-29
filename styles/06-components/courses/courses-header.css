@@ -59,10 +59,6 @@
   }
 }
 
-.course-header .header-title {
-  width: 90%;
-}
-
 @media only screen and (min-width: 576px) {
   .course-header .header-title {
     max-width: 640px;
