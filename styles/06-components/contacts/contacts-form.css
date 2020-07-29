@@ -11,7 +11,13 @@
 /* Shadow 24dp */
 .contact-us-form-container {
   max-width: 850px;
-  margin: 105px auto 100px;
+  margin: 24px auto 100px;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-us-form-container {
+    margin: 105px auto 100px;
+  }
 }
 
 .contact-us-form-container .contact-us-form-title {
