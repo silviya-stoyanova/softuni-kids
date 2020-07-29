@@ -2,9 +2,9 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "mixins.scss",
+        "tools-mixins.scss",
         "../01-settings/settings-breakpoints.scss"
     ],
     "names": [],
-    "file": "mixins.css"
+    "file": "tools-mixins.css"
 }
