@@ -1,3 +1,4 @@
+@import "../01-settings/settings-colors.scss";
 @import "../02-tools/mixins.scss";
 
 @mixin toggleElementsForTabletUp($startElement, $middleElement, $finalElement, $selector) {
@@ -8,6 +9,57 @@
 
         @include for-phone-up {
           display: block;
+        }
+      }
+    }
+  }
+}
+
+@mixin styleDots($total-dots, $selector) {
+  @for $i from 1 through $total-dots {
+    #{$selector}:nth-child(#{$i}) {
+      display: inline-block;
+    }
+
+    @if $i > 18 {
+      #{$selector}:nth-child(#{$i}) {
+        display: none;
+
+        @include for-tablet-up {
+          display: inline-block;
+        }
+      }
+    }
+
+    @include for-large-desktop-up {
+      @if $i < 4 {
+        #{$selector}:nth-child(#{$i}) {
+          background: $blue-400;
+        }
+      }
+
+      @if $i == 4 {
+        #{$selector}:nth-child(#{$i}) {
+          overflow: hidden;
+
+          .course-intro-half-dot-blue {
+            width: 100%;
+            height: 50%;
+            display: block;
+            background: $blue-400;
+          }
+        }
+      }
+
+      @if $i == 7 {
+        #{$selector}:nth-child(#{$i}) {
+          background: $white;
+        }
+      }
+
+      @if $i >= 8 {
+        #{$selector}:nth-child(#{$i}) {
+          display: none;
         }
       }
     }

@@ -1,8 +1,10 @@
 @import "../../01-settings/settings-colors.scss";
 @import "../../01-settings/settings-box-shadows.scss";
 @import "../../02-tools/mixins.scss";
+@import "../../02-tools/tools-functions.scss";
 
 $course-intro-dots: 30;
+$selector: ".course-intro-dot";
 
 .course-header {
   position: relative;
@@ -102,54 +104,7 @@ $course-intro-dots: 30;
     margin-right: -10px;
     overflow: hidden;
 
-    @for $i from 1 through $course-intro-dots {
-      .course-intro-dot:nth-child(#{$i}) {
-        display: inline-block;
-      }
-
-      @if $i > 18 {
-        .course-intro-dot:nth-child(#{$i}) {
-          display: none;
-
-          @include for-tablet-up {
-            display: inline-block;
-          }
-        }
-      }
-
-      @include for-large-desktop-up {
-        @if $i < 4 {
-          .course-intro-dot:nth-child(#{$i}) {
-            background: $blue-400;
-          }
-        }
-
-        @if $i == 4 {
-          .course-intro-dot:nth-child(#{$i}) {
-            overflow: hidden;
-
-            .course-intro-half-dot-blue {
-              width: 100%;
-              height: 50%;
-              display: block;
-              background: $blue-400;
-            }
-          }
-        }
-
-        @if $i == 7 {
-          .course-intro-dot:nth-child(#{$i}) {
-            background: $white;
-          }
-        }
-
-        @if $i >= 8 {
-          .course-intro-dot:nth-child(#{$i}) {
-            display: none;
-          }
-        }
-      }
-    }
+    @include styleDots($course-intro-dots, $selector);
 
     @include for-large-desktop-up {
       display: flex;
