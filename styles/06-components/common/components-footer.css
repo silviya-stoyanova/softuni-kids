@@ -159,6 +159,12 @@
   padding-bottom: 15px;
 }
 
+@media only screen and (min-width: 768px) {
+  .footer .footer-list-item-title {
+    white-space: nowrap;
+  }
+}
+
 .footer .footer-inner-list-item {
   padding-bottom: 10px;
 }

@@ -129,6 +129,10 @@
     line-height: 22px;
     color: $white;
     padding-bottom: 15px;
+
+    @include for-tablet-up {
+      white-space: nowrap;
+    }
   }
 
   .footer-inner-list-item {
