@@ -1,3 +1,7 @@
+html {
+  scrollbar-color: #187BD6 #E6E6E6;
+}
+
 body::-webkit-scrollbar {
   width: 20px;
 }

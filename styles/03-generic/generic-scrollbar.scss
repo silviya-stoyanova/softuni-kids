@@ -1,13 +1,17 @@
 @import "../01-settings/settings-colors.scss";
 
+html {
+  scrollbar-color: $blue-700 $grey-200;
+}
+
 body::-webkit-scrollbar {
   width: 20px;
 }
- 
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px $grey-400;
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: $blue-700;
 }
