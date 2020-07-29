@@ -9,8 +9,8 @@
 /* Shadow 12dp */
 /* Shadow 16dp */
 /* Shadow 24dp */
-.course-suitable-and-skills-container .course-suitable:before,
-.course-suitable-and-skills-container .course-skills:before {
+.course-suitable-and-important-container .course-suitable:before,
+.course-suitable-and-important-container .course-important:before {
   content: "";
   position: absolute;
   left: 0;
@@ -18,13 +18,13 @@
   height: 32px;
 }
 
-.course-suitable-and-skills-container {
+.course-suitable-and-important-container {
   margin-bottom: 64px;
   color: #565656;
 }
 
 @media only screen and (min-width: 768px) {
-  .course-suitable-and-skills-container {
+  .course-suitable-and-important-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -32,36 +32,36 @@
   }
 }
 
-.course-suitable-and-skills-container .course-suitable,
-.course-suitable-and-skills-container .course-skills {
+.course-suitable-and-important-container .course-suitable,
+.course-suitable-and-important-container .course-important {
   position: relative;
 }
 
-.course-suitable-and-skills-container .course-suitable:before,
-.course-suitable-and-skills-container .course-skills:before {
+.course-suitable-and-important-container .course-suitable:before,
+.course-suitable-and-important-container .course-important:before {
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-.course-suitable-and-skills-container .course-suitable {
+.course-suitable-and-important-container .course-suitable {
   border-bottom: 10px dotted #FFECB3;
   padding-bottom: 32px;
 }
 
 @media only screen and (min-width: 768px) {
-  .course-suitable-and-skills-container .course-suitable {
+  .course-suitable-and-important-container .course-suitable {
     padding: 0 32px 0 60px;
     border-bottom: none;
     border-right: 10px dotted #FFECB3;
   }
 }
 
-.course-suitable-and-skills-container .course-suitable:before {
+.course-suitable-and-important-container .course-suitable:before {
   background-image: url("../../../assets/icons/people.svg");
 }
 
-.course-suitable-and-skills-container .course-suitable-title,
-.course-suitable-and-skills-container .course-skills-title {
+.course-suitable-and-important-container .course-suitable-title,
+.course-suitable-and-important-container .course-important-title {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -73,30 +73,30 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .course-suitable-and-skills-container .course-suitable-title,
-  .course-suitable-and-skills-container .course-skills-title {
+  .course-suitable-and-important-container .course-suitable-title,
+  .course-suitable-and-important-container .course-important-title {
     display: inline-block;
     padding-left: 0px;
   }
 }
 
-.course-suitable-and-skills-container .course-suitable-description,
-.course-suitable-and-skills-container .course-skills-description {
+.course-suitable-and-important-container .course-suitable-description,
+.course-suitable-and-important-container .course-important-description {
   margin: 0;
 }
 
-.course-suitable-and-skills-container .course-skills {
+.course-suitable-and-important-container .course-important {
   margin-top: 32px;
 }
 
 @media only screen and (min-width: 768px) {
-  .course-suitable-and-skills-container .course-skills {
+  .course-suitable-and-important-container .course-important {
     padding-left: 60px;
     margin: 0 0 0 32px;
   }
 }
 
-.course-suitable-and-skills-container .course-skills:before {
+.course-suitable-and-important-container .course-important:before {
   background-image: url("../../../assets/icons/bell.svg");
 }
 /*# sourceMappingURL=course-suitable-and-important.css.map */

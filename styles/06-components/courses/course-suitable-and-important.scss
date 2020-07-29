@@ -3,7 +3,7 @@
 @import "../../02-tools/tools-mixins.scss";
 @import "../../04-elements/elements-pseudo-elements.scss";
 
-.course-suitable-and-skills-container {
+.course-suitable-and-important-container {
   margin-bottom: 64px;
   color: $grey-700;
 
@@ -13,7 +13,7 @@
   }
 
   .course-suitable,
-  .course-skills {
+  .course-important {
     position: relative;
 
     &:before {
@@ -39,7 +39,7 @@
   }
 
   .course-suitable-title,
-  .course-skills-title {
+  .course-important-title {
     display: inline-flex;
     font-weight: 600;
     line-height: 36px;
@@ -54,11 +54,11 @@
   }
 
   .course-suitable-description,
-  .course-skills-description {
+  .course-important-description {
     margin: 0;
   }
 
-  .course-skills {
+  .course-important {
     margin-top: 32px;
 
     @include for-tablet-up {
