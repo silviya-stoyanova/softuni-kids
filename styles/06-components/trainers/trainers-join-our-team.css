@@ -79,9 +79,7 @@
   line-height: 19px;
   background: none;
   border-radius: 6px;
-  border: 1px solid white;
-  -webkit-transition: 0.5s border-color ease-in;
-  transition: 0.5s border-color ease-in;
+  border: 1px solid #FFF;
 }
 
 .join-our-team .join-our-team-input-field, .join-our-team .join-our-team-input-field::-webkit-input-placeholder {
@@ -110,22 +108,22 @@
 
 .join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field::-webkit-input-placeholder:focus {
   outline: none;
-  border: 1px solid #FFC20A;
+  border: 1px solid #FFF;
 }
 
 .join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field:-ms-input-placeholder:focus {
   outline: none;
-  border: 1px solid #FFC20A;
+  border: 1px solid #FFF;
 }
 
 .join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field::-ms-input-placeholder:focus {
   outline: none;
-  border: 1px solid #FFC20A;
+  border: 1px solid #FFF;
 }
 
 .join-our-team .join-our-team-input-field:focus, .join-our-team .join-our-team-input-field::placeholder:focus {
   outline: none;
-  border: 1px solid #FFC20A;
+  border: 1px solid #FFF;
 }
 
 .join-our-team .join-our-team-btn {

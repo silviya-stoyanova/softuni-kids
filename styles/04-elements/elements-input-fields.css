@@ -38,4 +38,97 @@ option {
 textarea {
   resize: none;
 }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+input::placeholder,
+textarea::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: transparent !important;
+}
+
+.input-fields-container,
+.textareas-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-field-container,
+.textarea-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 330px;
+          flex: 0 1 330px;
+  position: relative;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+  color: #565656;
+  border-radius: 6px;
+  border: 1px solid #919191;
+}
+
+.input:focus + .floating-label-container .floating-label, .input:not(:placeholder-shown) + .floating-label-container .floating-label,
+.textarea:focus + .floating-label-container .floating-label,
+.textarea:not(:placeholder-shown) + .floating-label-container .floating-label {
+  top: -6px;
+  font-size: 12px;
+}
+
+.input, .input:focus, .input:active,
+.textarea,
+.textarea:focus,
+.textarea:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.input {
+  max-height: 50px;
+}
+
+.input.valid-input:hover {
+  border: 1px solid #565656;
+}
+
+.input.valid-input:hover + .floating-label-container .floating-label {
+  color: #565656;
+}
+
+.input.valid-input:focus {
+  border: 1px solid #41BEAD;
+}
+
+.input.valid-input:focus + .floating-label-container .floating-label {
+  color: #41BEAD;
+}
+
+.floating-label {
+  position: absolute;
+  padding: 0 8px;
+  left: 8px;
+  top: 16px;
+  color: #919191;
+  background-color: #66B9F8;
+  -webkit-transition: top 0.08s ease;
+  transition: top 0.08s ease;
+  font-size: 16px;
+  line-height: 19px;
+  color: inherit;
+}
 /*# sourceMappingURL=elements-input-fields.css.map */

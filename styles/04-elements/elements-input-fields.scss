@@ -27,3 +27,89 @@ option {
 textarea {
     resize: none;
 }
+
+input::placeholder,
+textarea::placeholder,
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: transparent !important;
+}
+
+.input-fields-container,
+.textareas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input-field-container,
+.textarea-container {
+    flex: 0 1 330px;
+    position: relative;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: $grey-700;
+    border-radius: 6px;
+    border: 1px solid $grey-500;
+
+    &:focus,
+    &:not(:placeholder-shown) {
+        + .floating-label-container {
+            .floating-label {
+                top: -6px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &,
+    &:focus,
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.input {
+    max-height: 50px;
+
+    &.valid-input {
+        &:hover {
+            border: 1px solid $grey-700;
+
+            + .floating-label-container {
+                .floating-label {
+                    color: $grey-700;
+                }
+            }
+        }
+
+        &:focus {
+            border: 1px solid $green-300;
+
+            + .floating-label-container {
+                .floating-label {
+                    color: $green-300;
+                }
+            }
+        }
+    }
+}
+
+.floating-label {
+    position: absolute;
+    padding: 0 8px;
+    left: 8px;
+    top: 16px;
+    color: $grey-500;
+    background-color: $blue-300;
+    transition: top 0.08s ease;
+
+    font-size: 16px;
+    line-height: 19px;
+    color: inherit;
+}
