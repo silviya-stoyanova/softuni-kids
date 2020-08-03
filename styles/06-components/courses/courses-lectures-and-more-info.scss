@@ -3,6 +3,26 @@
 @import "../../02-tools/tools-mixins.scss";
 @import "../../04-elements/elements-pseudo-elements.scss";
 
+@keyframes hide-border-bottom {
+  from {
+    border-bottom-color: $orange-800;
+  }
+
+  to {
+    border-bottom-color: transparent;
+  }
+}
+
+@keyframes show-border-bottom {
+  from {
+    border-bottom-color: transparent;
+  }
+
+  to {
+    border-bottom-color: $orange-800;
+  }
+}
+
 .lectures-and-more-info-container {
   margin-bottom: 96px;
   color: $grey-700;
@@ -11,26 +31,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-bottom: 172px;
-  }
-
-  @keyframes hide-border-bottom {
-    from {
-      border-bottom-color: $orange-800;
-    }
-
-    to {
-      border-bottom-color: transparent;
-    }
-  }
-
-  @keyframes show-border-bottom {
-    from {
-      border-bottom-color: transparent;
-    }
-
-    to {
-      border-bottom-color: $orange-800;
-    }
   }
 
   a {
