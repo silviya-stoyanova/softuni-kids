@@ -95,9 +95,31 @@
     <section class="contact-us-form-container container">
       <h3 class="contact-us-form-title">Пишете ни</h3>
       <form action="#" class="contact-us-form">
-        <input class="contact-us-input-field" type="text" placeholder="Заглавие">
-        <input class="contact-us-input-field" type="text" placeholder="Имейл адрес">
-        <textarea class="contact-us-textarea" type="text" placeholder="Съобщение"></textarea>
+
+        <article class="input-field-container contact-us-input-field-container">
+          <input class="input contact-us-input-field" placeholder="Заглавие" type="text">
+          <section class="floating-label-container">
+            <label class="floating-label">
+              Заглавие
+            </label>
+          </section>
+        </article>
+        <article class="input-field-container contact-us-input-field-container">
+          <input class="input contact-us-input-field" placeholder="Имейл адрес" type="text">
+          <section class="floating-label-container">
+            <label class="floating-label">
+              Имейл адрес
+            </label>
+          </section>
+        </article>
+        <article class="input-field-container contact-us-textarea-container">
+          <textarea class="textarea contact-us-textarea" type="text" placeholder="Съобщение"></textarea>
+          <section class="floating-label-container">
+            <label class="floating-label">
+              Съобщение
+            </label>
+          </section>
+        </article>
         <button class="btn btn-primary contact-us-btn" type="submit">
           изпрати
         </button>

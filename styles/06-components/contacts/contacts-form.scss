@@ -10,6 +10,10 @@
     margin: 105px auto 100px;
   }
 
+  @include for-desktop-up {
+    padding: 0;
+  }
+
   .contact-us-form-title {
     font-weight: 600;
     font-size: 30px;
@@ -31,11 +35,21 @@
     }
   }
 
+  .floating-label {
+    color: $grey-500;
+    background-color: $white;
+  }
+
+  .contact-us-textarea-container {
+    @include for-tablet-up {
+      grid-column: 1 / span 2;
+    }
+  }
+
   .contact-us-input-field,
   .contact-us-textarea {
     border-radius: 6px;
     border: 1px solid $grey-500;
-    transition: 0.5s border-color ease-in;
     padding: 10px 10px 15px;
 
     &::placeholder {
@@ -46,16 +60,6 @@
 
     &:focus {
       outline: none;
-      border: 1px solid $orange-800;
-    }
-  }
-
-  .contact-us-input-field {
-  }
-
-  .contact-us-textarea {
-    @include for-tablet-up {
-      grid-column: 1 / span 2;
     }
   }
 

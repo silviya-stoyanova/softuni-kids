@@ -20,6 +20,12 @@
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .contact-us-form-container {
+    padding: 0;
+  }
+}
+
 .contact-us-form-container .contact-us-form-title {
   font-weight: 600;
   font-size: 30px;
@@ -48,12 +54,23 @@
   }
 }
 
+.contact-us-form-container .floating-label {
+  color: #919191;
+  background-color: #FFF;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-us-form-container .contact-us-textarea-container {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+  }
+}
+
 .contact-us-form-container .contact-us-input-field,
 .contact-us-form-container .contact-us-textarea {
   border-radius: 6px;
   border: 1px solid #919191;
-  -webkit-transition: 0.5s border-color ease-in;
-  transition: 0.5s border-color ease-in;
   padding: 10px 10px 15px;
 }
 
@@ -88,15 +105,6 @@
 .contact-us-form-container .contact-us-input-field:focus,
 .contact-us-form-container .contact-us-textarea:focus {
   outline: none;
-  border: 1px solid #FF9100;
-}
-
-@media only screen and (min-width: 768px) {
-  .contact-us-form-container .contact-us-textarea {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / span 2;
-  }
 }
 
 @media only screen and (min-width: 768px) {
