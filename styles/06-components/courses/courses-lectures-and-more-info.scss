@@ -13,12 +13,32 @@
     margin-bottom: 172px;
   }
 
+  @keyframes hide-border-bottom {
+    from {
+      border-bottom-color: $orange-800;
+    }
+
+    to {
+      border-bottom-color: transparent;
+    }
+  }
+
+  @keyframes show-border-bottom {
+    from {
+      border-bottom-color: transparent;
+    }
+
+    to {
+      border-bottom-color: $orange-800;
+    }
+  }
+
   a {
     border-bottom: 1px solid $orange-800;
-    transition: 0.5s ease border;
+    animation: 0.5s ease show-border-bottom;
 
     &:hover {
-      border-bottom-color: transparent;
+      animation: 0.5s ease hide-border-bottom forwards;
     }
   }
 
