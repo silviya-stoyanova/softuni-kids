@@ -36,7 +36,6 @@
 
 .btn-primary,
 .btn-small {
-  font-weight: 400;
   color: #FFF;
   background-color: #FF9100;
   -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
@@ -72,7 +71,6 @@
 
 .btn-secondary {
   height: 40px;
-  font-weight: 900;
   line-height: 16px;
   padding: 11px 24px;
   color: #FF9100;
@@ -96,7 +94,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-weight: 800;
   font-size: 13px;
   line-height: 16px;
 }
