@@ -74,6 +74,11 @@
   }
 }
 
+.join-our-team .floating-label {
+  background-color: #66B9F8;
+  color: #FFF;
+}
+
 .join-our-team .join-our-team-input-field {
   padding: 16px;
   line-height: 19px;
