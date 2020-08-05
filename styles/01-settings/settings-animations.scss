@@ -1,0 +1,19 @@
+@keyframes hide-border-bottom {
+  from {
+    border-bottom-color: $orange-800;
+  }
+
+  to {
+    border-bottom-color: transparent;
+  }
+}
+
+@keyframes show-border-bottom {
+  from {
+    border-bottom-color: transparent;
+  }
+
+  to {
+    border-bottom-color: $orange-800;
+  }
+}
